@@ -3,150 +3,450 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generic Problems in Recruitment - Your Recruitment Solutions</title>
+    <title>Recruitment Problems & Solutions - Smart Recruitment</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+      nav .fa-check { display: none !important; }
+    </style>
 </head>
 <body>
     <header>
         <div class="container clearfix">
-            <h1>Your Recruitment Solutions</h1>
+            <h1>Smart Recruitment</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="problems.html">Generic Problems</a></li>
-                    <li><a href="solution.html">Our Solution</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-house nav-icon"></i>Home</a></li>
+                    <li><a href="problems.html" class="active"><i class="fa-solid fa-bug nav-icon"></i>Problems</a></li>
+                    <li><a href="solution.html"><i class="fa-solid fa-lightbulb nav-icon"></i>Solution</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-envelope nav-icon"></i>Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="problems-overview" class="container">
-            <h2>Navigating the Hurdles: Common Challenges in Modern Recruitment</h2>
-            <p class="section-description">Recruitment is a critical function that can make or break a company's growth. Yet, many organizations face similar, persistent challenges that hinder their ability to attract, select, and retain top talent. Understanding these issues is the first step towards finding effective solutions – and that's exactly what our software is built to do.</p>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3><a href="problem-poor-job-descriptions.html">Poor Job Descriptions</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Vague or unrealistic job descriptions lead to irrelevant applications or a lack of quality candidates.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Use data-driven templates, include clear responsibilities, and collaborate with current employees for accuracy.</p>
-                    <p><a href="problem-poor-job-descriptions.html" class="read-more">Learn More &rarr;</a></p>
+        <!-- Hero Section -->
+        <section class="problems-hero">
+            <div class="container">
+                <h1>Recruitment Challenges</h1>
+                <p class="subtitle">Discover the 15 critical problems plaguing modern recruitment and how our innovative solutions address each one systematically.</p>
+                
+                <div class="problems-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Critical Problems</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">% Coverage</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="24">0</span>
+                        <span class="stat-label">Hours to Solve</span>
+                    </div>
                 </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-resume-centric-screening.html">Resume-Centric Screening</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Over-reliance on resumes often filters out great candidates who don’t know how to “sell” themselves on paper.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Implement skill-based assessments early and use AI for matching on potential and capability.</p>
-                    <p><a href="problem-resume-centric-screening.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-unconscious-bias.html">Unconscious Bias</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Hiring decisions are often influenced by biases related to gender, name, education, or appearance.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Use anonymized profiles, structured interviews, standardized rubrics, **and a fraud-resistant assessment framework** to ensure unbiased selection.</p>
-                    <p><a href="problem-unconscious-bias.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-lack-of-skill-verification.html">Lack of Skill Verification</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Candidates may exaggerate or misrepresent their skills.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Implement real-world simulations, take-home assignments, and integrate with verified skill-assessment platforms, **backed by an advanced Fraud Mapping System to ensure integrity and prevent cheating.**</p>
-                    <p><a href="problem-lack-of-skill-verification.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-lengthy-hiring-timelines.html">Lengthy Hiring Timelines</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Long processes make candidates lose interest or accept other offers.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Use automation for scheduling, streamline to a 3-step process, and leverage ATS for fast-tracking.</p>
-                    <p><a href="problem-lengthy-hiring-timelines.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-poor-candidate-experience.html">Poor Candidate Experience</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Candidates often feel ghosted or uninformed about their status.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Create automated status updates, offer personalized feedback, and build a branded application portal, **including smart re-routing to new opportunities after rejection.**</p>
-                    <p><a href="problem-poor-candidate-experience.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-culture-fit-confusion.html">Culture Fit vs. Culture Add Confusion</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Companies look for people who "fit in," which leads to lack of diversity in thought.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Redefine cultural assessment to look for values alignment and diverse perspectives through situational judgment tests.</p>
-                    <p><a href="problem-culture-fit-confusion.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-inadequate-tech.html">Inadequate Use of Technology</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Traditional companies still rely on outdated hiring tools.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Build or integrate smart hiring platforms with AI screening, chatbots, and interview scheduling, leveraging data analytics.</p>
-                    <p><a href="problem-inadequate-tech.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-no-future-focus.html">No Focus on Future Growth Potential</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Hiring focuses only on current role requirements, ignoring growth trajectory.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Use psychometric assessments and learning agility tests; incorporate career path mapping into the hiring pitch.</p>
-                    <p><a href="problem-no-future-focus.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-broken-onboarding.html">Broken Onboarding Process</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Even when hiring is done right, poor onboarding leads to early attrition.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Automate pre-joining engagement, provide 30-60-90 day plans, and include culture training.</p>
-                    <p><a href="problem-broken-onboarding.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-misalignment.html">Misalignment Between Recruiters & Hiring Managers</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Lack of clarity or communication leads to sourcing irrelevant profiles.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Start with calibration meetings and use shared dashboards/platforms for real-time tracking and feedback.</p>
-                    <p><a href="problem-misalignment.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-limited-talent-pool.html">Limited Talent Pool</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Companies stick to traditional sourcing channels.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Tap into alternative talent pools (bootcamp grads, gig workers, remote candidates) and use AI-based matching engines.</p>
-                    <p><a href="problem-limited-talent-pool.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-high-hiring-costs.html">High Hiring Costs</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Hiring is often inefficient and expensive.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Automate repetitive tasks to reduce time-to-hire. Use referral programs and internal mobility before external hiring. Optimize job ads and campaigns through performance tracking.</p>
-                    <p><a href="problem-high-hiring-costs.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-no-post-hire-data.html">No Post-Hire Data Collection</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Companies don’t track how successful their hires actually turn out.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Track performance metrics of new hires at 3, 6, and 12 months. Use feedback loops to adjust the hiring process continuously.</p>
-                    <p><a href="problem-no-post-hire-data.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-
-                <div class="feature-card">
-                    <h3><a href="problem-learning-chaos.html">Learning Chaos & Lack of Skill Mastery</a></h3>
-                    <p class="problem-gap"><strong>Gap:</strong> Candidates follow scattered learning paths, lacking clarity on role-specific skills, leading to superficial knowledge instead of true expertise.</p>
-                    <p class="problem-solution-preview"><strong>Solution Preview:</strong> Our SkillGraph+™ provides personalized, role-based career tracks, micro-certified learning modules, and AI-powered mentorship to ensure deep skill mastery and job readiness.</p>
-                    <p><a href="problem-learning-chaos.html" class="read-more">Learn More &rarr;</a></p>
-                </div>
-                </div>
+            </div>
         </section>
 
-        <section class="cta-section">
+        <!-- Search and Filter Section -->
+        <section class="container" style="padding: 2rem 0;">
+            <div class="problems-search">
+                <input type="text" class="search-input" placeholder="Search for specific problems..." id="problemSearch">
+            </div>
+            
+            <div class="problem-categories">
+                <button class="category-filter active" data-category="all">All Problems</button>
+                <button class="category-filter" data-category="screening">Screening</button>
+                <button class="category-filter" data-category="experience">Experience</button>
+                <button class="category-filter" data-category="process">Process</button>
+                <button class="category-filter" data-category="technology">Technology</button>
+            </div>
+        </section>
+
+        <!-- Problems Grid -->
+        <section class="container">
+            <div class="problems-grid" id="problemsGrid">
+                <!-- Problem Card 1 -->
+                <div class="problem-card fade-in-up" data-category="screening" data-search="poor job descriptions vague unrealistic">
+                    <h3><a href="problem-poor-job-descriptions.html">Poor Job Descriptions</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Vague or unrealistic job descriptions lead to irrelevant applications or a lack of quality candidates.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Use data-driven templates, include clear responsibilities, and collaborate with current employees for accuracy.
+                    </div>
+                    <a href="problem-poor-job-descriptions.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 2 -->
+                <div class="problem-card fade-in-up" data-category="screening" data-search="resume centric screening over reliance">
+                    <h3><a href="problem-resume-centric-screening.html">Resume-Centric Screening</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Over-reliance on resumes often filters out great candidates who don't know how to "sell" themselves on paper.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Implement skill-based assessments early and use AI for matching on potential and capability.
+                    </div>
+                    <a href="problem-resume-centric-screening.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 3 -->
+                <div class="problem-card fade-in-up" data-category="screening" data-search="unconscious bias gender name education">
+                    <h3><a href="problem-unconscious-bias.html">Unconscious Bias</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Hiring decisions are often influenced by biases related to gender, name, education, or appearance.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Use anonymized profiles, structured interviews, standardized rubrics, and a fraud-resistant assessment framework.
+                    </div>
+                    <a href="problem-unconscious-bias.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 4 -->
+                <div class="problem-card fade-in-up" data-category="screening" data-search="lack skill verification exaggerate misrepresent">
+                    <h3><a href="problem-lack-of-skill-verification.html">Lack of Skill Verification</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Candidates may exaggerate or misrepresent their skills.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Implement real-world simulations, take-home assignments, and integrate with verified skill-assessment platforms.
+                    </div>
+                    <a href="problem-lack-of-skill-verification.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 5 -->
+                <div class="problem-card fade-in-up" data-category="process" data-search="lengthy hiring timelines long processes">
+                    <h3><a href="problem-lengthy-hiring-timelines.html">Lengthy Hiring Timelines</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Long processes make candidates lose interest or accept other offers.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Use automation for scheduling, streamline to a 3-step process, and leverage ATS for fast-tracking.
+                    </div>
+                    <a href="problem-lengthy-hiring-timelines.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 6 -->
+                <div class="problem-card fade-in-up" data-category="experience" data-search="poor candidate experience ghosted uninformed">
+                    <h3><a href="problem-poor-candidate-experience.html">Poor Candidate Experience</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Candidates often feel ghosted or uninformed about their status.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Create automated status updates, offer personalized feedback, and build a branded application portal.
+                    </div>
+                    <a href="problem-poor-candidate-experience.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 7 -->
+                <div class="problem-card fade-in-up" data-category="screening" data-search="culture fit culture add diversity thought">
+                    <h3><a href="problem-culture-fit-confusion.html">Culture Fit vs. Culture Add Confusion</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Companies look for people who "fit in," which leads to lack of diversity in thought.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Redefine cultural assessment to look for values alignment and diverse perspectives through situational judgment tests.
+                    </div>
+                    <a href="problem-culture-fit-confusion.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 8 -->
+                <div class="problem-card fade-in-up" data-category="technology" data-search="inadequate technology outdated hiring tools">
+                    <h3><a href="problem-inadequate-tech.html">Inadequate Use of Technology</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Traditional companies still rely on outdated hiring tools.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Build or integrate smart hiring platforms with AI screening, chatbots, and interview scheduling.
+                    </div>
+                    <a href="problem-inadequate-tech.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 9 -->
+                <div class="problem-card fade-in-up" data-category="process" data-search="no future growth potential current role requirements">
+                    <h3><a href="problem-no-future-focus.html">No Focus on Future Growth Potential</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Hiring focuses only on current role requirements, ignoring growth trajectory.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Use psychometric assessments and learning agility tests; incorporate career path mapping into the hiring pitch.
+                    </div>
+                    <a href="problem-no-future-focus.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 10 -->
+                <div class="problem-card fade-in-up" data-category="process" data-search="broken onboarding process early attrition">
+                    <h3><a href="problem-broken-onboarding.html">Broken Onboarding Process</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Even when hiring is done right, poor onboarding leads to early attrition.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Automate pre-joining engagement, provide 30-60-90 day plans, and include culture training.
+                    </div>
+                    <a href="problem-broken-onboarding.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 11 -->
+                <div class="problem-card fade-in-up" data-category="process" data-search="misalignment recruiters hiring managers communication">
+                    <h3><a href="problem-misalignment.html">Misalignment Between Recruiters & Hiring Managers</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Lack of clarity or communication leads to sourcing irrelevant profiles.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Start with calibration meetings and use shared dashboards/platforms for real-time tracking and feedback.
+                    </div>
+                    <a href="problem-misalignment.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 12 -->
+                <div class="problem-card fade-in-up" data-category="screening" data-search="limited talent pool traditional sourcing channels">
+                    <h3><a href="problem-limited-talent-pool.html">Limited Talent Pool</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Companies stick to traditional sourcing channels.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Tap into alternative talent pools (bootcamp grads, gig workers, remote candidates) and use AI-based matching engines.
+                    </div>
+                    <a href="problem-limited-talent-pool.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 13 -->
+                <div class="problem-card fade-in-up" data-category="process" data-search="high hiring costs inefficient expensive">
+                    <h3><a href="problem-high-hiring-costs.html">High Hiring Costs</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Hiring is often inefficient and expensive.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Automate repetitive tasks to reduce time-to-hire. Use referral programs and internal mobility before external hiring.
+                    </div>
+                    <a href="problem-high-hiring-costs.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 14 -->
+                <div class="problem-card fade-in-up" data-category="process" data-search="no post hire data collection successful hires">
+                    <h3><a href="problem-no-post-hire-data.html">No Post-Hire Data Collection</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Companies don't track how successful their hires actually turn out.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Track performance metrics of new hires at 3, 6, and 12 months. Use feedback loops to adjust the hiring process continuously.
+                    </div>
+                    <a href="problem-no-post-hire-data.html" class="read-more">Learn More</a>
+                </div>
+
+                <!-- Problem Card 15 -->
+                <div class="problem-card fade-in-up" data-category="process" data-search="learning chaos skill mastery scattered paths">
+                    <h3><a href="problem-learning-chaos.html">Learning Chaos & Lack of Skill Mastery</a></h3>
+                    <div class="problem-gap">
+                        <strong>Gap:</strong> Candidates follow scattered learning paths, lacking clarity on role-specific skills, leading to superficial knowledge instead of true expertise.
+                    </div>
+                    <div class="problem-solution-preview">
+                        <strong>Solution Preview:</strong> Our SkillGraph+™ provides personalized, role-based career tracks, micro-certified learning modules, and AI-powered mentorship.
+                    </div>
+                    <a href="problem-learning-chaos.html" class="read-more">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced CTA Section -->
+        <section class="problems-cta">
             <div class="container">
-                <h2>Ready to Solve These Challenges?</h2>
-                <p>Explore how our comprehensive software tackles each of these problems, empowering you to build a more efficient and effective recruitment process.</p>
-                <a href="solution.html" class="btn">Discover Our Solution</a>
+                <h2>Ready to Transform Your Recruitment?</h2>
+                <p>Our comprehensive solution addresses all 15 critical problems with cutting-edge technology and proven methodologies. Start building a more efficient, effective, and equitable hiring process today.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="solution.html" class="btn">Explore Our Solution</a>
+                    <a href="contact.html" class="btn btn-secondary">Get Started</a>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- Floating Action Button -->
+    <a href="solution.html" class="fab" title="View Solution">
+        <i class="fas fa-rocket"></i>
+    </a>
+
     <footer>
         <div class="container">
-            <p>&copy; 2025 Your Recruitment Solutions. All rights reserved.</p>
+            <p>&copy; 2025 Smart Recruitment. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Enhanced JavaScript -->
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Animated counter for stats
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current);
+            }, 30);
+        }
+
+        // Trigger counter animation when stats come into view
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const statsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.getAttribute('data-target'));
+                        animateCounter(stat, target);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Scroll animations for problem cards
+        const cardObserver = new IntersectionObserver(function(entries) {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.setProperty('--stagger-index', index);
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('problemSearch');
+        const problemCards = document.querySelectorAll('.problem-card');
+
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            
+            problemCards.forEach(card => {
+                const searchData = card.getAttribute('data-search').toLowerCase();
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const content = card.textContent.toLowerCase();
+                
+                if (searchData.includes(searchTerm) || title.includes(searchTerm) || content.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Category filtering
+        const categoryFilters = document.querySelectorAll('.category-filter');
+        
+        categoryFilters.forEach(filter => {
+            filter.addEventListener('click', function() {
+                // Remove active class from all filters
+                categoryFilters.forEach(f => f.classList.remove('active'));
+                // Add active class to clicked filter
+                this.classList.add('active');
+                
+                const category = this.getAttribute('data-category');
+                
+                problemCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Initialize observers
+        document.addEventListener('DOMContentLoaded', function() {
+            // Observe stats section
+            const statsSection = document.querySelector('.problems-stats');
+            if (statsSection) {
+                statsObserver.observe(statsSection);
+            }
+            
+            // Observe problem cards
+            problemCards.forEach(card => {
+                cardObserver.observe(card);
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Enhanced button hover effects
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px) scale(1.02)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add ripple effect to buttons
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Enhanced card hover effects
+        document.querySelectorAll('.problem-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px)';
+                this.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.15)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '';
+            });
+        });
+    </script>
 </body>
 </html>

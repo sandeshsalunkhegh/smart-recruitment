@@ -1,0 +1,475 @@
+/* style.css */
+
+/* Basic Reset & Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-top: 80px; /* Space for fixed header */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header --- */
+header {
+    background: #2c3e50; /* Dark blue-grey */
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    float: left;
+    margin-left: 20px;
+}
+
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #3498db; /* Bright blue */
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --- Sections & Headings (General) --- */
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+section h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+section h4 { /* For solution cards */
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.section-description { /* For centered descriptive text under h2 */
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    font-size: 1.15em;
+    color: #555;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #e74c3c; /* Red */
+}
+
+.btn-secondary:hover {
+    background: #c0392b;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* --- Homepage Specific Styles --- */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('recruitment-hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.hero h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.5em;
+    max-width: 800px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.hero .btn {
+    font-size: 1.2em;
+    padding: 15px 35px;
+}
+
+/* Features Grid (Used on Homepage and Problems Page) */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.feature-card h3 a { /* For links within feature cards */
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.feature-card h3 a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 0;
+}
+
+/* Styles for problem summaries on problems.html */
+.problem-gap {
+    font-weight: normal;
+    color: #e74c3c; /* Reddish for problem */
+    margin-bottom: 5px;
+}
+
+.problem-solution-preview {
+    font-style: italic;
+    color: #2c3e50; /* Darker text for solution hint */
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+
+/* Testimonial Section (Homepage) */
+.testimonials-section {
+    background: #ecf0f1; /* Light grey background */
+    padding: 60px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testimonial-card .author {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* --- Solution Grid (for solution.html) --- */
+.solution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.solution-card {
+    background-color: #ecf0f1; /* Light grey */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* --- Contact Page Specific Styles --- */
+.contact-form-container {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+}
+
+.contact-info h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+
+/* Call to Action Section (General - Used on multiple pages) */
+.cta-section {
+    background: #34495e; /* Darker blue-grey */
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.cta-section h2 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* --- Footer --- */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    header h1, header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    /* Homepage specific responsiveness */
+    .hero {
+        padding: 80px 20px;
+        min-height: 400px;
+    }
+    .hero h2 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .solution-grid, .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        margin: 15px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .hero .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+        margin-left: 0 !important; /* Override inline style for small screens */
+        margin-top: 10px;
+    }
+    .btn-secondary {
+        margin-top: 15px; /* Add margin between buttons on small screens */
+    }
+
+    .cta-section h2 {
+        font-size: 2em;
+    }
+    .cta-section p {
+        font-size: 1em;
+    }
+}

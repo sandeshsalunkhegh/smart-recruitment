@@ -129,7 +129,7 @@ header.scrolled {
     box-shadow: var(--shadow-md);
 }
 
-header h1 {
+header .logo {
     float: left;
     margin-left: var(--spacing-md);
     font-family: var(--font-heading);
@@ -496,7 +496,7 @@ footer {
         --section-padding: var(--spacing-xl) 0;
     }
     
-    header h1, header nav {
+    header .logo, header nav {
         float: none;
         text-align: center;
         margin: var(--spacing-xs) 0;
@@ -1074,7 +1074,7 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header h1, header nav {
+    header .logo, header nav {
         float: none;
         text-align: center;
         margin: var(--spacing-xs) 0;

@@ -2380,7 +2380,8 @@ body.loaded .hero {
     text-align: left;
     position: relative;
     margin: 0;
-    border-bottom: 1px solid var(--border-color);
+    border: none !important;
+    border-bottom: none !important;
     background: var(--bg-primary);
 }
 
@@ -3310,7 +3311,8 @@ body.loaded .hero {
     text-align: left;
     position: relative;
     margin: 0;
-    border-bottom: 1px solid var(--border-color);
+    border: none !important;
+    border-bottom: none !important;
     background: var(--bg-primary);
 }
 

@@ -29,305 +29,320 @@
                 <p class="subtitle">Find answers to common questions about recruitment challenges, our solutions, and the Smart Recruitment platform.</p>
             </div>
         </section>
-        <section class="faq-section container">
+        <!-- Enhanced Search Bar with Clear Button -->
+        <div class="faq-search-bar">
+            <div class="search-input-wrapper">
+                <input type="text" id="faq-search-input" placeholder="Search FAQs... (e.g., hiring, bias, cost)" autocomplete="off">
+                <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Clear search" style="display: none;">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="search-loading-indicator" id="search-loading" style="display: none;">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+            </div>
+            <div id="search-results-counter"></div>
+        </div>
+        <!-- Skip to FAQ Navigation -->
+        <a href="#faq-navigation" id="skip-to-faq" style="position:absolute;left:-9999px;z-index:9999;background:#2563eb;color:#fff;padding:0.5rem 1rem;text-decoration:none;border-radius:4px;">Skip to FAQ navigation</a>
+        <section class="faq-section container" id="faq-navigation">
             <!-- Example for one group, repeat for all -->
-            <div class="faq-group">
-                <button class="faq-group-toggle"><i class="fa-solid fa-magnifying-glass"></i> Screening & Assessment</button>
-                <div class="faq-accordion">
+            <div class="faq-group" role="group" aria-labelledby="faq-group-1-label">
+                <button class="faq-group-toggle" id="faq-group-1-label" aria-expanded="false" aria-controls="faq-group-1-accordion"><i class="fa-solid fa-magnifying-glass"></i> Screening & Assessment</button>
+                <div class="faq-accordion" id="faq-group-1-accordion" role="region" aria-labelledby="faq-group-1-label">
                     <!-- Poor Job Descriptions -->
                     <div class="faq-item">
-                        <button class="faq-question">Why are poor job descriptions a problem in recruitment?</button>
+                        <h3 class="faq-question">Why are poor job descriptions a problem in recruitment?</h3>
                         <div class="faq-answer">Vague or unrealistic job descriptions attract irrelevant applicants and deter qualified candidates, making it harder to find the right fit for the role.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How does Smart Recruitment help create better job descriptions?</button>
+                        <h3 class="faq-question">How does Smart Recruitment help create better job descriptions?</h3>
                         <div class="faq-answer">We provide data-driven templates, encourage collaboration with current employees, and ensure clear, accurate responsibilities for every role.</div>
                     </div>
                     <!-- Resume-Centric Screening -->
                     <div class="faq-item">
-                        <button class="faq-question">What is resume-centric screening and why is it limiting?</button>
+                        <h3 class="faq-question">What is resume-centric screening and why is it limiting?</h3>
                         <div class="faq-answer">Relying solely on resumes can filter out talented candidates who may not present well on paper but have strong skills and potential.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How does your platform move beyond resume-centric screening?</button>
+                        <h3 class="faq-question">How does your platform move beyond resume-centric screening?</h3>
                         <div class="faq-answer">We use skill-based assessments and AI-driven matching to evaluate candidates on their true abilities, not just their resume.</div>
                     </div>
                     <!-- Unconscious Bias -->
                     <div class="faq-item">
-                        <button class="faq-question">How does unconscious bias affect hiring?</button>
+                        <h3 class="faq-question">How does unconscious bias affect hiring?</h3>
                         <div class="faq-answer">Biases related to gender, name, education, or appearance can lead to unfair hiring decisions and reduced diversity.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How does Smart Recruitment reduce unconscious bias?</button>
+                        <h3 class="faq-question">How does Smart Recruitment reduce unconscious bias?</h3>
                         <div class="faq-answer">We anonymize profiles, use structured interviews, and apply standardized rubrics to ensure fair, objective assessments.</div>
                     </div>
                     <!-- Lack of Skill Verification -->
                     <div class="faq-item">
-                        <button class="faq-question">Why is skill verification important?</button>
+                        <h3 class="faq-question">Why is skill verification important?</h3>
                         <div class="faq-answer">Without verifying skills, candidates may exaggerate or misrepresent their abilities, leading to poor hires and wasted resources.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How do you verify candidate skills?</button>
+                        <h3 class="faq-question">How do you verify candidate skills?</h3>
                         <div class="faq-answer">We use real-world simulations, take-home assignments, and integrate with verified skill-assessment platforms.</div>
                     </div>
                     <!-- Culture Fit Confusion -->
                     <div class="faq-item">
-                        <button class="faq-question">What is the difference between culture fit and culture add?</button>
+                        <h3 class="faq-question">What is the difference between culture fit and culture add?</h3>
                         <div class="faq-answer">Culture fit focuses on similarity, while culture add values diverse perspectives and alignment with company values.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How does your platform assess culture add?</button>
+                        <h3 class="faq-question">How does your platform assess culture add?</h3>
                         <div class="faq-answer">We use situational judgment tests and gamified simulations to evaluate values alignment and diversity of thought.</div>
                     </div>
                     <!-- Limited Talent Pool -->
                     <div class="faq-item">
-                        <button class="faq-question">Why do companies struggle with a limited talent pool?</button>
+                        <h3 class="faq-question">Why do companies struggle with a limited talent pool?</h3>
                         <div class="faq-answer">Relying on traditional sourcing channels restricts access to diverse and qualified candidates.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How does Smart Recruitment expand the talent pool?</button>
+                        <h3 class="faq-question">How does Smart Recruitment expand the talent pool?</h3>
                         <div class="faq-answer">We tap into alternative sources like bootcamp graduates, gig workers, and remote candidates, using AI-based matching engines.</div>
                     </div>
                     <!-- Additions to Screening & Assessment -->
                     <div class="faq-item">
-                        <button class="faq-question">How can I ensure my job descriptions attract diverse candidates?</button>
+                        <h3 class="faq-question">How can I ensure my job descriptions attract diverse candidates?</h3>
                         <div class="faq-answer">Use inclusive language, avoid jargon, and highlight your commitment to diversity and equal opportunity. Our templates are designed to help you do this effectively.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Can I customize skill assessments for different roles?</button>
+                        <h3 class="faq-question">Can I customize skill assessments for different roles?</h3>
                         <div class="faq-answer">Yes, you can tailor assessments to match the specific skills and requirements of each role, ensuring a precise fit for your organization.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How does the platform handle candidates with non-traditional backgrounds?</button>
+                        <h3 class="faq-question">How does the platform handle candidates with non-traditional backgrounds?</h3>
                         <div class="faq-answer">Our skill-based approach values demonstrated ability over credentials, giving all candidates a fair chance regardless of their background.</div>
                     </div>
                 </div>
             </div>
             <!-- FAQ GROUP: Process & Efficiency -->
-            <div class="faq-group">
-                <button class="faq-group-toggle"><i class="fa-solid fa-gears"></i> Process & Efficiency</button>
-                <div class="faq-accordion">
+            <div class="faq-group" role="group" aria-labelledby="faq-group-2-label">
+                <button class="faq-group-toggle" id="faq-group-2-label" aria-expanded="false" aria-controls="faq-group-2-accordion"><i class="fa-solid fa-gears"></i> Process & Efficiency</button>
+                <div class="faq-accordion" id="faq-group-2-accordion" role="region" aria-labelledby="faq-group-2-label">
                     <!-- Lengthy Hiring Timelines -->
                     <div class="faq-item">
-                        <button class="faq-question">What causes lengthy hiring timelines?</button>
-                        <div class="faq-answer">Long, manual processes and inefficient scheduling can delay hiring, causing candidates to lose interest or accept other offers.</div>
+                        <button class="faq-question" id="faq-q-16" aria-expanded="false" aria-controls="faq-a-16">What causes lengthy hiring timelines?</button>
+                        <div class="faq-answer" id="faq-a-16" role="region" aria-labelledby="faq-q-16">Long, manual processes and inefficient scheduling can delay hiring, causing candidates to lose interest or accept other offers.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How do you shorten hiring timelines?</button>
-                        <div class="faq-answer">We automate scheduling, streamline steps, and use an ATS to fast-track qualified candidates.</div>
+                        <button class="faq-question" id="faq-q-17" aria-expanded="false" aria-controls="faq-a-17">How do you shorten hiring timelines?</button>
+                        <div class="faq-answer" id="faq-a-17" role="region" aria-labelledby="faq-q-17">We automate scheduling, streamline steps, and use an ATS to fast-track qualified candidates.</div>
                     </div>
                     <!-- High Hiring Costs -->
                     <div class="faq-item">
-                        <button class="faq-question">Why are hiring costs often so high?</button>
-                        <div class="faq-answer">Hidden and overt costs accumulate from inefficient processes, agency fees, and poor quality hires.</div>
+                        <button class="faq-question" id="faq-q-18" aria-expanded="false" aria-controls="faq-a-18">Why are hiring costs often so high?</button>
+                        <div class="faq-answer" id="faq-a-18" role="region" aria-labelledby="faq-q-18">Hidden and overt costs accumulate from inefficient processes, agency fees, and poor quality hires.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How does Smart Recruitment reduce hiring costs?</button>
-                        <div class="faq-answer">We automate repetitive tasks, encourage internal mobility, and optimize sourcing to reduce expenses.</div>
+                        <button class="faq-question" id="faq-q-19" aria-expanded="false" aria-controls="faq-a-19">How does Smart Recruitment reduce hiring costs?</button>
+                        <div class="faq-answer" id="faq-a-19" role="region" aria-labelledby="faq-q-19">We automate repetitive tasks, encourage internal mobility, and optimize sourcing to reduce expenses.</div>
                     </div>
                     <!-- Broken Onboarding -->
                     <div class="faq-item">
-                        <button class="faq-question">How does onboarding impact retention?</button>
-                        <div class="faq-answer">Poor onboarding can lead to early attrition, as new hires feel unsupported or disconnected.</div>
+                        <button class="faq-question" id="faq-q-20" aria-expanded="false" aria-controls="faq-a-20">How does onboarding impact retention?</button>
+                        <div class="faq-answer" id="faq-a-20" role="region" aria-labelledby="faq-q-20">Poor onboarding can lead to early attrition, as new hires feel unsupported or disconnected.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">What onboarding solutions do you offer?</button>
-                        <div class="faq-answer">We automate pre-joining engagement, provide structured 30-60-90 day plans, and include culture training for smooth integration.</div>
+                        <button class="faq-question" id="faq-q-21" aria-expanded="false" aria-controls="faq-a-21">What onboarding solutions do you offer?</button>
+                        <div class="faq-answer" id="faq-a-21" role="region" aria-labelledby="faq-q-21">We automate pre-joining engagement, provide structured 30-60-90 day plans, and include culture training for smooth integration.</div>
                     </div>
                     <!-- Misalignment -->
                     <div class="faq-item">
-                        <button class="faq-question">What is the impact of misalignment between recruiters and hiring managers?</button>
-                        <div class="faq-answer">Lack of clarity or communication can result in sourcing irrelevant profiles and wasted effort.</div>
+                        <button class="faq-question" id="faq-q-22" aria-expanded="false" aria-controls="faq-a-22">What is the impact of misalignment between recruiters and hiring managers?</button>
+                        <div class="faq-answer" id="faq-a-22" role="region" aria-labelledby="faq-q-22">Lack of clarity or communication can result in sourcing irrelevant profiles and wasted effort.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How do you improve alignment?</button>
-                        <div class="faq-answer">We facilitate calibration meetings and provide shared dashboards for real-time tracking and feedback.</div>
+                        <button class="faq-question" id="faq-q-23" aria-expanded="false" aria-controls="faq-a-23">How do you improve alignment?</button>
+                        <div class="faq-answer" id="faq-a-23" role="region" aria-labelledby="faq-q-23">We facilitate calibration meetings and provide shared dashboards for real-time tracking and feedback.</div>
                     </div>
                     <!-- No Post-Hire Data -->
                     <div class="faq-item">
-                        <button class="faq-question">Why is post-hire data collection important?</button>
-                        <div class="faq-answer">Tracking new hire performance helps continuously improve recruitment strategies and long-term success.</div>
+                        <button class="faq-question" id="faq-q-24" aria-expanded="false" aria-controls="faq-a-24">Why is post-hire data collection important?</button>
+                        <div class="faq-answer" id="faq-a-24" role="region" aria-labelledby="faq-q-24">Tracking new hire performance helps continuously improve recruitment strategies and long-term success.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How does Smart Recruitment enable post-hire data collection?</button>
-                        <div class="faq-answer">We track performance metrics at 3, 6, and 12 months, using feedback loops to refine the hiring process.</div>
+                        <button class="faq-question" id="faq-q-25" aria-expanded="false" aria-controls="faq-a-25">How does Smart Recruitment enable post-hire data collection?</button>
+                        <div class="faq-answer" id="faq-a-25" role="region" aria-labelledby="faq-q-25">We track performance metrics at 3, 6, and 12 months, using feedback loops to refine the hiring process.</div>
                     </div>
                     <!-- No Future Focus -->
                     <div class="faq-item">
-                        <button class="faq-question">Why is it a problem to focus only on current role requirements?</button>
-                        <div class="faq-answer">Ignoring growth trajectory can lead to poor long-term fit and missed opportunities for employee development.</div>
+                        <button class="faq-question" id="faq-q-26" aria-expanded="false" aria-controls="faq-a-26">Why is it a problem to focus only on current role requirements?</button>
+                        <div class="faq-answer" id="faq-a-26" role="region" aria-labelledby="faq-q-26">Ignoring growth trajectory can lead to poor long-term fit and missed opportunities for employee development.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How do you address future growth potential?</button>
-                        <div class="faq-answer">We use psychometric assessments, learning agility tests, and career path mapping to align hiring with long-term goals.</div>
+                        <button class="faq-question" id="faq-q-27" aria-expanded="false" aria-controls="faq-a-27">How do you address future growth potential?</button>
+                        <div class="faq-answer" id="faq-a-27" role="region" aria-labelledby="faq-q-27">We use psychometric assessments, learning agility tests, and career path mapping to align hiring with long-term goals.</div>
                     </div>
                     <!-- Learning Chaos -->
                     <div class="faq-item">
-                        <button class="faq-question">What is learning chaos and how does it affect candidates?</button>
-                        <div class="faq-answer">Scattered learning paths and lack of clarity on required skills lead to superficial knowledge and job unpreparedness.</div>
+                        <button class="faq-question" id="faq-q-28" aria-expanded="false" aria-controls="faq-a-28">What is learning chaos and how does it affect candidates?</button>
+                        <div class="faq-answer" id="faq-a-28" role="region" aria-labelledby="faq-q-28">Scattered learning paths and lack of clarity on required skills lead to superficial knowledge and job unpreparedness.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How does SkillGraph+™ solve learning chaos?</button>
-                        <div class="faq-answer">SkillGraph+™ provides personalized, role-based learning tracks, micro-certified modules, and AI-powered mentorship for job-ready expertise.</div>
+                        <button class="faq-question" id="faq-q-29" aria-expanded="false" aria-controls="faq-a-29">How does SkillGraph+™ solve learning chaos?</button>
+                        <div class="faq-answer" id="faq-a-29" role="region" aria-labelledby="faq-q-29">SkillGraph+™ provides personalized, role-based learning tracks, micro-certified modules, and AI-powered mentorship for job-ready expertise.</div>
                     </div>
                     <!-- Additions to Process & Efficiency -->
                     <div class="faq-item">
-                        <button class="faq-question">What integrations are available with existing HR systems?</button>
-                        <div class="faq-answer">Smart Recruitment integrates with popular ATS, HRIS, and onboarding tools to streamline your workflow and data management.</div>
+                        <button class="faq-question" id="faq-q-30" aria-expanded="false" aria-controls="faq-a-30">What integrations are available with existing HR systems?</button>
+                        <div class="faq-answer" id="faq-a-30" role="region" aria-labelledby="faq-q-30">Smart Recruitment integrates with popular ATS, HRIS, and onboarding tools to streamline your workflow and data management.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How do you handle high-volume hiring?</button>
-                        <div class="faq-answer">Our automation features, bulk actions, and AI-powered shortlisting make it easy to manage and process large numbers of candidates efficiently.</div>
+                        <button class="faq-question" id="faq-q-31" aria-expanded="false" aria-controls="faq-a-31">How do you handle high-volume hiring?</button>
+                        <div class="faq-answer" id="faq-a-31" role="region" aria-labelledby="faq-q-31">Our automation features, bulk actions, and AI-powered shortlisting make it easy to manage and process large numbers of candidates efficiently.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Can I track the ROI of my recruitment process?</button>
-                        <div class="faq-answer">Yes, our analytics dashboard provides insights into time-to-hire, cost-per-hire, quality of hire, and other key metrics to measure your recruitment ROI.</div>
+                        <button class="faq-question" id="faq-q-32" aria-expanded="false" aria-controls="faq-a-32">Can I track the ROI of my recruitment process?</button>
+                        <div class="faq-answer" id="faq-a-32" role="region" aria-labelledby="faq-q-32">Yes, our analytics dashboard provides insights into time-to-hire, cost-per-hire, quality of hire, and other key metrics to measure your recruitment ROI.</div>
                     </div>
                 </div>
             </div>
             <!-- FAQ GROUP: Experience -->
-            <div class="faq-group">
-                <button class="faq-group-toggle"><i class="fa-solid fa-face-smile"></i> Experience</button>
-                <div class="faq-accordion">
+            <div class="faq-group" role="group" aria-labelledby="faq-group-3-label">
+                <button class="faq-group-toggle" id="faq-group-3-label" aria-expanded="false" aria-controls="faq-group-3-accordion"><i class="fa-solid fa-face-smile"></i> Experience</button>
+                <div class="faq-accordion" id="faq-group-3-accordion" role="region" aria-labelledby="faq-group-3-label">
                     <!-- Poor Candidate Experience -->
                     <div class="faq-item">
-                        <button class="faq-question">Why do candidates often have a poor experience?</button>
-                        <div class="faq-answer">Lack of communication, feedback, and transparency can make candidates feel ghosted or undervalued.</div>
+                        <button class="faq-question" id="faq-q-33" aria-expanded="false" aria-controls="faq-a-33">Why do candidates often have a poor experience?</button>
+                        <div class="faq-answer" id="faq-a-33" role="region" aria-labelledby="faq-q-33">Lack of communication, feedback, and transparency can make candidates feel ghosted or undervalued.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How do you improve candidate experience?</button>
-                        <div class="faq-answer">We offer automated status updates, personalized feedback, and a branded application portal for a positive journey.</div>
+                        <button class="faq-question" id="faq-q-34" aria-expanded="false" aria-controls="faq-a-34">How do you improve candidate experience?</button>
+                        <div class="faq-answer" id="faq-a-34" role="region" aria-labelledby="faq-q-34">We offer automated status updates, personalized feedback, and a branded application portal for a positive journey.</div>
                     </div>
                     <!-- Additions to Experience -->
                     <div class="faq-item">
-                        <button class="faq-question">How do you ensure a positive experience for remote candidates?</button>
-                        <div class="faq-answer">We offer virtual interview scheduling, remote-friendly assessments, and clear communication to support candidates regardless of location.</div>
+                        <button class="faq-question" id="faq-q-35" aria-expanded="false" aria-controls="faq-a-35">How do you ensure a positive experience for remote candidates?</button>
+                        <div class="faq-answer" id="faq-a-35" role="region" aria-labelledby="faq-q-35">We offer virtual interview scheduling, remote-friendly assessments, and clear communication to support candidates regardless of location.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Can candidates provide feedback on the hiring process?</button>
-                        <div class="faq-answer">Yes, candidates can share feedback at each stage, helping you continuously improve the candidate experience.</div>
+                        <button class="faq-question" id="faq-q-36" aria-expanded="false" aria-controls="faq-a-36">Can candidates provide feedback on the hiring process?</button>
+                        <div class="faq-answer" id="faq-a-36" role="region" aria-labelledby="faq-q-36">Yes, candidates can share feedback at each stage, helping you continuously improve the candidate experience.</div>
                     </div>
                 </div>
             </div>
             <!-- FAQ GROUP: Technology -->
-            <div class="faq-group">
-                <button class="faq-group-toggle"><i class="fa-solid fa-microchip"></i> Technology</button>
-                <div class="faq-accordion">
+            <div class="faq-group" role="group" aria-labelledby="faq-group-4-label">
+                <button class="faq-group-toggle" id="faq-group-4-label" aria-expanded="false" aria-controls="faq-group-4-accordion"><i class="fa-solid fa-microchip"></i> Technology</button>
+                <div class="faq-accordion" id="faq-group-4-accordion" role="region" aria-labelledby="faq-group-4-label">
                     <!-- Inadequate Use of Technology -->
                     <div class="faq-item">
-                        <button class="faq-question">How does outdated technology affect recruitment?</button>
-                        <div class="faq-answer">Relying on outdated tools slows down hiring, reduces efficiency, and can lead to missed opportunities.</div>
+                        <button class="faq-question" id="faq-q-37" aria-expanded="false" aria-controls="faq-a-37">How does outdated technology affect recruitment?</button>
+                        <div class="faq-answer" id="faq-a-37" role="region" aria-labelledby="faq-q-37">Relying on outdated tools slows down hiring, reduces efficiency, and can lead to missed opportunities.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">What technology solutions do you provide?</button>
-                        <div class="faq-answer">We offer smart hiring platforms with AI screening, chatbots, and automated interview scheduling for a seamless process.</div>
+                        <button class="faq-question" id="faq-q-38" aria-expanded="false" aria-controls="faq-a-38">What technology solutions do you provide?</button>
+                        <div class="faq-answer" id="faq-a-38" role="region" aria-labelledby="faq-q-38">We offer smart hiring platforms with AI screening, chatbots, and automated interview scheduling for a seamless process.</div>
                     </div>
                     <!-- Additions to Technology -->
                     <div class="faq-item">
-                        <button class="faq-question">Is my data secure on your platform?</button>
-                        <div class="faq-answer">We use industry-standard encryption, regular security audits, and strict access controls to protect your data and privacy.</div>
+                        <button class="faq-question" id="faq-q-39" aria-expanded="false" aria-controls="faq-a-39">Is my data secure on your platform?</button>
+                        <div class="faq-answer" id="faq-a-39" role="region" aria-labelledby="faq-q-39">We use industry-standard encryption, regular security audits, and strict access controls to protect your data and privacy.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How often do you update your technology and features?</button>
-                        <div class="faq-answer">We release regular updates based on user feedback and industry trends to ensure you always have access to the latest tools.</div>
+                        <button class="faq-question" id="faq-q-40" aria-expanded="false" aria-controls="faq-a-40">How often do you update your technology and features?</button>
+                        <div class="faq-answer" id="faq-a-40" role="region" aria-labelledby="faq-q-40">We release regular updates based on user feedback and industry trends to ensure you always have access to the latest tools.</div>
                     </div>
                 </div>
             </div>
             <!-- FAQ GROUP: Miscellaneous & Platform -->
-            <div class="faq-group">
-                <button class="faq-group-toggle"><i class="fa-solid fa-layer-group"></i> Miscellaneous & Platform</button>
-                <div class="faq-accordion">
+            <div class="faq-group" role="group" aria-labelledby="faq-group-5-label">
+                <button class="faq-group-toggle" id="faq-group-5-label" aria-expanded="false" aria-controls="faq-group-5-accordion"><i class="fa-solid fa-layer-group"></i> Miscellaneous & Platform</button>
+                <div class="faq-accordion" id="faq-group-5-accordion" role="region" aria-labelledby="faq-group-5-label">
                     <div class="faq-item">
-                        <button class="faq-question">What makes Smart Recruitment different from traditional hiring platforms?</button>
-                        <div class="faq-answer">We focus on skills, potential, and culture alignment, not just resumes. Our platform uses AI, real-world assessments, and continuous feedback to ensure the best fit for every role.</div>
+                        <button class="faq-question" id="faq-q-41" aria-expanded="false" aria-controls="faq-a-41">What makes Smart Recruitment different from traditional hiring platforms?</button>
+                        <div class="faq-answer" id="faq-a-41" role="region" aria-labelledby="faq-q-41">We focus on skills, potential, and culture alignment, not just resumes. Our platform uses AI, real-world assessments, and continuous feedback to ensure the best fit for every role.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How does the anti-cheating framework work?</button>
-                        <div class="faq-answer">We use behavioral analytics, browser monitoring, and AI-based fraud detection to ensure assessment integrity and fairness.</div>
+                        <button class="faq-question" id="faq-q-42" aria-expanded="false" aria-controls="faq-a-42">How does the anti-cheating framework work?</button>
+                        <div class="faq-answer" id="faq-a-42" role="region" aria-labelledby="faq-q-42">We use behavioral analytics, browser monitoring, and AI-based fraud detection to ensure assessment integrity and fairness.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Can your platform be customized for different industries?</button>
-                        <div class="faq-answer">Yes, our solution is flexible and can be tailored to the unique needs of various industries and company sizes.</div>
+                        <button class="faq-question" id="faq-q-43" aria-expanded="false" aria-controls="faq-a-43">Can your platform be customized for different industries?</button>
+                        <div class="faq-answer" id="faq-a-43" role="region" aria-labelledby="faq-q-43">Yes, our solution is flexible and can be tailored to the unique needs of various industries and company sizes.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How do you support long-term candidate growth?</button>
-                        <div class="faq-answer">With SkillGraph+™, Dream Role Tracker™, and AI mentorship, we guide candidates through multi-year career development and readiness for future roles.</div>
+                        <button class="faq-question" id="faq-q-44" aria-expanded="false" aria-controls="faq-a-44">How do you support long-term candidate growth?</button>
+                        <div class="faq-answer" id="faq-a-44" role="region" aria-labelledby="faq-q-44">With SkillGraph+™, Dream Role Tracker™, and AI mentorship, we guide candidates through multi-year career development and readiness for future roles.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Is Smart Recruitment suitable for startups and large enterprises?</button>
-                        <div class="faq-answer">Absolutely! Our platform scales to support organizations of all sizes, from fast-growing startups to global enterprises.</div>
+                        <button class="faq-question" id="faq-q-45" aria-expanded="false" aria-controls="faq-a-45">Is Smart Recruitment suitable for startups and large enterprises?</button>
+                        <div class="faq-answer" id="faq-a-45" role="region" aria-labelledby="faq-q-45">Absolutely! Our platform scales to support organizations of all sizes, from fast-growing startups to global enterprises.</div>
                     </div>
                     <!-- Additions to Miscellaneous & Platform -->
                     <div class="faq-item">
-                        <button class="faq-question">Do you offer onboarding and training for new users?</button>
-                        <div class="faq-answer">Yes, we provide onboarding sessions, tutorials, and ongoing support to help you get the most out of Smart Recruitment.</div>
+                        <button class="faq-question" id="faq-q-46" aria-expanded="false" aria-controls="faq-a-46">Do you offer onboarding and training for new users?</button>
+                        <div class="faq-answer" id="faq-a-46" role="region" aria-labelledby="faq-q-46">Yes, we provide onboarding sessions, tutorials, and ongoing support to help you get the most out of Smart Recruitment.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">What support options are available if I have questions or issues?</button>
-                        <div class="faq-answer">Our support team is available via chat, email, and phone to assist you with any questions or technical issues.</div>
+                        <button class="faq-question" id="faq-q-47" aria-expanded="false" aria-controls="faq-a-47">What support options are available if I have questions or issues?</button>
+                        <div class="faq-answer" id="faq-a-47" role="region" aria-labelledby="faq-q-47">Our support team is available via chat, email, and phone to assist you with any questions or technical issues.</div>
                     </div>
                     <!-- Additions: Candidate POV -->
                     <div class="faq-item">
-                        <button class="faq-question">As a candidate, how can I showcase my skills if I don't have a traditional resume?</button>
-                        <div class="faq-answer">You can demonstrate your abilities through skill-based assessments, project uploads, and video pitches. Our platform values real-world skills and potential over traditional resumes.</div>
+                        <button class="faq-question" id="faq-q-48" aria-expanded="false" aria-controls="faq-a-48">As a candidate, how can I showcase my skills if I don't have a traditional resume?</button>
+                        <div class="faq-answer" id="faq-a-48" role="region" aria-labelledby="faq-q-48">You can demonstrate your abilities through skill-based assessments, project uploads, and video pitches. Our platform values real-world skills and potential over traditional resumes.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How do I know which roles I am best suited for?</button>
-                        <div class="faq-answer">Our Smart Role Profiler and AI-driven recommendations help you discover roles that match your strengths, interests, and values—even those you may not have considered.</div>
+                        <button class="faq-question" id="faq-q-49" aria-expanded="false" aria-controls="faq-a-49">How do I know which roles I am best suited for?</button>
+                        <div class="faq-answer" id="faq-a-49" role="region" aria-labelledby="faq-q-49">Our Smart Role Profiler and AI-driven recommendations help you discover roles that match your strengths, interests, and values—even those you may not have considered.</div>
                     </div>
                     <!-- Additions: Product Manager POV -->
                     <div class="faq-item">
-                        <button class="faq-question">How can product managers use Smart Recruitment to build better teams?</button>
-                        <div class="faq-answer">Product managers can define role-specific skills, set up custom assessments, and use analytics to identify candidates who best fit their team's needs and culture.</div>
+                        <button class="faq-question" id="faq-q-50" aria-expanded="false" aria-controls="faq-a-50">How can product managers use Smart Recruitment to build better teams?</button>
+                        <div class="faq-answer" id="faq-a-50" role="region" aria-labelledby="faq-q-50">Product managers can define role-specific skills, set up custom assessments, and use analytics to identify candidates who best fit their team's needs and culture.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Can I track the progress of multiple open roles and hiring pipelines?</button>
-                        <div class="faq-answer">Yes, our dashboard allows you to monitor all open positions, candidate stages, and key metrics in one place for efficient team management.</div>
+                        <button class="faq-question" id="faq-q-51" aria-expanded="false" aria-controls="faq-a-51">Can I track the progress of multiple open roles and hiring pipelines?</button>
+                        <div class="faq-answer" id="faq-a-51" role="region" aria-labelledby="faq-q-51">Yes, our dashboard allows you to monitor all open positions, candidate stages, and key metrics in one place for efficient team management.</div>
                     </div>
                     <!-- Additions: Recruiter POV -->
                     <div class="faq-item">
-                        <button class="faq-question">How does Smart Recruitment help me source and screen candidates faster?</button>
-                        <div class="faq-answer">Our AI-powered matching, automated screening, and bulk actions streamline sourcing and shortlisting, saving you time and effort.</div>
+                        <button class="faq-question" id="faq-q-52" aria-expanded="false" aria-controls="faq-a-52">How does Smart Recruitment help me source and screen candidates faster?</button>
+                        <div class="faq-answer" id="faq-a-52" role="region" aria-labelledby="faq-q-52">Our AI-powered matching, automated screening, and bulk actions streamline sourcing and shortlisting, saving you time and effort.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Can I collaborate with hiring managers within the platform?</button>
-                        <div class="faq-answer">Yes, you can share candidate profiles, feedback, and dashboards with hiring managers for real-time collaboration and decision-making.</div>
+                        <button class="faq-question" id="faq-q-53" aria-expanded="false" aria-controls="faq-a-53">Can I collaborate with hiring managers within the platform?</button>
+                        <div class="faq-answer" id="faq-a-53" role="region" aria-labelledby="faq-q-53">Yes, you can share candidate profiles, feedback, and dashboards with hiring managers for real-time collaboration and decision-making.</div>
                     </div>
                     <!-- Additions: Non-Tech Recruitment POV -->
                     <div class="faq-item">
-                        <button class="faq-question">Is Smart Recruitment suitable for non-technical roles?</button>
-                        <div class="faq-answer">Absolutely! Our platform supports assessments and workflows for sales, marketing, HR, operations, and other non-tech roles, with customizable skill rubrics.</div>
+                        <button class="faq-question" id="faq-q-54" aria-expanded="false" aria-controls="faq-a-54">Is Smart Recruitment suitable for non-technical roles?</button>
+                        <div class="faq-answer" id="faq-a-54" role="region" aria-labelledby="faq-q-54">Absolutely! Our platform supports assessments and workflows for sales, marketing, HR, operations, and other non-tech roles, with customizable skill rubrics.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How do you assess soft skills and cultural fit for non-tech positions?</button>
-                        <div class="faq-answer">We use situational judgment tests, behavioral interviews, and culture fit simulations tailored to non-technical roles.</div>
+                        <button class="faq-question" id="faq-q-55" aria-expanded="false" aria-controls="faq-a-55">How do you assess soft skills and cultural fit for non-tech positions?</button>
+                        <div class="faq-answer" id="faq-a-55" role="region" aria-labelledby="faq-q-55">We use situational judgment tests, behavioral interviews, and culture fit simulations tailored to non-technical roles.</div>
                     </div>
                     <!-- Additions: Tech Recruitment POV -->
                     <div class="faq-item">
-                        <button class="faq-question">How does the platform evaluate technical skills for engineering roles?</button>
-                        <div class="faq-answer">We offer coding challenges, real-world project assessments, and integration with popular coding platforms to accurately measure technical ability.</div>
+                        <button class="faq-question" id="faq-q-56" aria-expanded="false" aria-controls="faq-a-56">How does the platform evaluate technical skills for engineering roles?</button>
+                        <div class="faq-answer" id="faq-a-56" role="region" aria-labelledby="faq-q-56">We offer coding challenges, real-world project assessments, and integration with popular coding platforms to accurately measure technical ability.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Can I create custom technical assessments for my company?</button>
-                        <div class="faq-answer">Yes, you can design and deploy your own coding tests, project tasks, and technical interviews to match your specific requirements.</div>
+                        <button class="faq-question" id="faq-q-57" aria-expanded="false" aria-controls="faq-a-57">Can I create custom technical assessments for my company?</button>
+                        <div class="faq-answer" id="faq-a-57" role="region" aria-labelledby="faq-q-57">Yes, you can design and deploy your own coding tests, project tasks, and technical interviews to match your specific requirements.</div>
                     </div>
                     <!-- Additions: User POV -->
                     <div class="faq-item">
-                        <button class="faq-question">How do I reset my password or update my profile information?</button>
-                        <div class="faq-answer">You can reset your password or update your profile anytime from your account settings. If you need help, our support team is available to assist you.</div>
+                        <button class="faq-question" id="faq-q-58" aria-expanded="false" aria-controls="faq-a-58">How do I reset my password or update my profile information?</button>
+                        <div class="faq-answer" id="faq-a-58" role="region" aria-labelledby="faq-q-58">You can reset your password or update your profile anytime from your account settings. If you need help, our support team is available to assist you.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">Is there a mobile version or app for Smart Recruitment?</button>
-                        <div class="faq-answer">Yes, our platform is fully responsive and accessible on all devices. A dedicated mobile app is also in development.</div>
+                        <button class="faq-question" id="faq-q-59" aria-expanded="false" aria-controls="faq-a-59">Is there a mobile version or app for Smart Recruitment?</button>
+                        <div class="faq-answer" id="faq-a-59" role="region" aria-labelledby="faq-q-59">Yes, our platform is fully responsive and accessible on all devices. A dedicated mobile app is also in development.</div>
                     </div>
                     <!-- Additions: Developer POV -->
                     <div class="faq-item">
-                        <button class="faq-question">Can developers integrate Smart Recruitment with other tools or platforms?</button>
-                        <div class="faq-answer">Yes, we offer APIs and webhooks for seamless integration with your existing HR, communication, and productivity tools.</div>
+                        <button class="faq-question" id="faq-q-60" aria-expanded="false" aria-controls="faq-a-60">Can developers integrate Smart Recruitment with other tools or platforms?</button>
+                        <div class="faq-answer" id="faq-a-60" role="region" aria-labelledby="faq-q-60">Yes, we offer APIs and webhooks for seamless integration with your existing HR, communication, and productivity tools.</div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How can I provide feedback or request new features as a developer?</button>
-                        <div class="faq-answer">We welcome feedback! Developers can submit suggestions or feature requests through our support portal or community forums.</div>
+                        <button class="faq-question" id="faq-q-61" aria-expanded="false" aria-controls="faq-a-61">How can I provide feedback or request new features as a developer?</button>
+                        <div class="faq-answer" id="faq-a-61" role="region" aria-labelledby="faq-q-61">We welcome feedback! Developers can submit suggestions or feature requests through our support portal or community forums.</div>
                     </div>
                 </div>
             </div>
@@ -338,33 +353,806 @@
             <p>&copy; 2025 Smart Recruitment. All rights reserved.</p>
         </div>
     </footer>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top" style="display:none;position:fixed;bottom:2rem;right:2rem;z-index:2000;background:#2563eb;color:#fff;border:none;border-radius:50%;width:48px;height:48px;box-shadow:0 4px 16px rgba(37,99,235,0.18);font-size:1.5rem;cursor:pointer;transition:background 0.2s;">
+        <i class="fa fa-arrow-up"></i>
+    </button>
     <script>
-    // FAQ Group Collapsible Functionality
-    const groupToggles = document.querySelectorAll('.faq-group-toggle');
-    groupToggles.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const group = this.parentElement;
-            group.classList.toggle('open');
-            const accordion = group.querySelector('.faq-accordion');
-            if (group.classList.contains('open')) {
+    // Enhanced FAQ JavaScript with Group-Only Collapsible Functionality
+    (function() {
+        'use strict';
+        
+        // Utility function for safe element selection
+        function safeQuerySelector(selector, parent = document) {
+            try {
+                return parent.querySelector(selector);
+            } catch (error) {
+                console.warn('Element not found:', selector, error);
+                return null;
+            }
+        }
+        
+        // Utility function for safe element selection (multiple)
+        function safeQuerySelectorAll(selector, parent = document) {
+            try {
+                return parent.querySelectorAll(selector);
+            } catch (error) {
+                console.warn('Elements not found:', selector, error);
+                return [];
+            }
+        }
+        
+        // Enhanced FAQ Group Collapsible Functionality
+        function initFAQGroups() {
+            try {
+                const groupToggles = safeQuerySelectorAll('.faq-group-toggle');
+                
+                groupToggles.forEach((btn, index) => {
+                    if (!btn) return;
+                    
+                    // Enhanced keyboard support
+                    btn.addEventListener('keydown', function(e) {
+                        handleGroupKeydown(e, this, index, groupToggles);
+                    });
+                    
+                    btn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        toggleGroup(this);
+                    });
+                });
+            } catch (error) {
+                console.error('Error initializing FAQ groups:', error);
+            }
+        }
+        
+        function handleGroupKeydown(e, button, index, allToggles) {
+            try {
+                switch(e.key) {
+                    case 'Enter':
+                    case ' ':
+                        e.preventDefault();
+                        toggleGroup(button);
+                        break;
+                    case 'ArrowDown':
+                        e.preventDefault();
+                        navigateToNextGroup(index, allToggles, 1);
+                        break;
+                    case 'ArrowUp':
+                        e.preventDefault();
+                        navigateToNextGroup(index, allToggles, -1);
+                        break;
+                    case 'Home':
+                        e.preventDefault();
+                        if (allToggles[0]) allToggles[0].focus();
+                        break;
+                    case 'End':
+                        e.preventDefault();
+                        if (allToggles[allToggles.length - 1]) allToggles[allToggles.length - 1].focus();
+                        break;
+                }
+            } catch (error) {
+                console.error('Error handling group keydown:', error);
+            }
+        }
+        
+        function navigateToNextGroup(currentIndex, allToggles, direction) {
+            try {
+                const nextIndex = currentIndex + direction;
+                if (nextIndex >= 0 && nextIndex < allToggles.length) {
+                    allToggles[nextIndex].focus();
+                }
+            } catch (error) {
+                console.error('Error navigating groups:', error);
+            }
+        }
+        
+        function toggleGroup(button) {
+            try {
+                const group = button.closest('.faq-group');
+                if (!group) return;
+                
+                const accordion = safeQuerySelector('.faq-accordion', group);
+                if (!accordion) return;
+                
+                const isOpen = group.classList.contains('open');
+                
+                // Update ARIA attributes
+                button.setAttribute('aria-expanded', !isOpen);
+                
+                if (!isOpen) {
+                    group.classList.add('open');
                 accordion.style.maxHeight = accordion.scrollHeight + 'px';
             } else {
+                    group.classList.remove('open');
                 accordion.style.maxHeight = null;
+                }
+            } catch (error) {
+                console.error('Error toggling FAQ group:', error);
             }
-        });
-    });
-    // FAQ Accordion Functionality
-    document.querySelectorAll('.faq-question').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const answer = this.nextElementSibling;
-            this.classList.toggle('active');
-            if (answer.style.maxHeight) {
-                answer.style.maxHeight = null;
+        }
+        
+        // Enhanced FAQ Search/Filter Functionality with Smart Search and Instant UX
+        function initFAQSearch() {
+            try {
+                const searchInput = safeQuerySelector('#faq-search-input');
+                const clearBtn = safeQuerySelector('#search-clear-btn');
+                const loadingIndicator = safeQuerySelector('#search-loading');
+                const resultsCounter = safeQuerySelector('#search-results-counter');
+                
+                if (!searchInput) return;
+                
+                let searchTimeout;
+                let totalItems = 0;
+                let isSearching = false;
+                
+                // Count total items on initialization
+                const allFaqItems = safeQuerySelectorAll('.faq-item');
+                totalItems = allFaqItems.length;
+                
+                // Synonyms dictionary for recruitment terms
+                const synonyms = {
+                    'hiring': ['recruitment', 'talent acquisition', 'staffing', 'employing', 'hiring process'],
+                    'recruitment': ['hiring', 'talent acquisition', 'staffing', 'employing', 'recruiting'],
+                    'candidate': ['applicant', 'job seeker', 'prospect', 'applicant', 'candidates'],
+                    'applicant': ['candidate', 'job seeker', 'prospect', 'applicants'],
+                    'resume': ['cv', 'curriculum vitae', 'application', 'profile'],
+                    'cv': ['resume', 'curriculum vitae', 'application', 'profile'],
+                    'interview': ['meeting', 'assessment', 'evaluation', 'screening'],
+                    'assessment': ['evaluation', 'test', 'examination', 'screening'],
+                    'bias': ['prejudice', 'discrimination', 'unconscious bias', 'bias'],
+                    'diversity': ['inclusion', 'diverse', 'multicultural', 'inclusive'],
+                    'culture': ['workplace culture', 'company culture', 'organizational culture'],
+                    'onboarding': ['orientation', 'induction', 'training', 'integration'],
+                    'skill': ['ability', 'competency', 'expertise', 'capability'],
+                    'experience': ['background', 'history', 'work experience', 'expertise'],
+                    'cost': ['expense', 'budget', 'investment', 'spending'],
+                    'timeline': ['schedule', 'deadline', 'timeframe', 'duration'],
+                    'technology': ['tech', 'software', 'platform', 'system'],
+                    'platform': ['system', 'software', 'tool', 'technology'],
+                    'ai': ['artificial intelligence', 'machine learning', 'automation'],
+                    'automation': ['ai', 'machine learning', 'automated', 'automatic'],
+                    'remote': ['virtual', 'online', 'distance', 'telecommute'],
+                    'virtual': ['remote', 'online', 'distance', 'digital'],
+                    'feedback': ['review', 'evaluation', 'assessment', 'comment'],
+                    'performance': ['productivity', 'efficiency', 'effectiveness', 'output'],
+                    'retention': ['keeping', 'maintaining', 'employee retention', 'turnover'],
+                    'turnover': ['retention', 'attrition', 'employee turnover', 'churn']
+                };
+                
+                // Clear button functionality
+                if (clearBtn) {
+                    clearBtn.addEventListener('click', function() {
+                        searchInput.value = '';
+                        searchInput.focus();
+                        performSearch('');
+                        updateClearButtonVisibility('');
+                    });
+                }
+                
+                // Enhanced input handling with instant feedback
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.trim();
+                    
+                    // Show/hide clear button
+                    updateClearButtonVisibility(query);
+                    
+                    // Show loading indicator for longer queries
+                    if (query.length > 2) {
+                        showLoadingState(true);
+                    }
+                    
+                    // Clear previous timeout
+                    clearTimeout(searchTimeout);
+                    
+                    // Perform instant search for short queries
+                    if (query.length <= 2) {
+                        performSearch(query);
+                        showLoadingState(false);
+                    } else {
+                        // Debounced search for longer queries
+                        searchTimeout = setTimeout(() => {
+                            performSearch(query);
+                            showLoadingState(false);
+                        }, 200); // Reduced from 300ms for more responsive feel
+                    }
+                });
+                
+                // Enhanced keyboard support
+                searchInput.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        this.value = '';
+                        performSearch('');
+                        updateClearButtonVisibility('');
+                        this.blur();
+                    } else if (e.key === 'Enter' && this.value.trim()) {
+                        // Focus first matching question
+                        const firstMatch = safeQuerySelector('.faq-item[style=""] .faq-question');
+                        if (firstMatch) {
+                            firstMatch.focus();
+                        }
+                    }
+                });
+                
+                // Focus management
+                searchInput.addEventListener('focus', function() {
+                    this.parentElement.classList.add('search-focused');
+                });
+                
+                searchInput.addEventListener('blur', function() {
+                    this.parentElement.classList.remove('search-focused');
+                });
+                
+                // Function to update clear button visibility
+                function updateClearButtonVisibility(query) {
+                    if (clearBtn) {
+                        if (query.length > 0) {
+                            clearBtn.style.display = 'flex';
+                            clearBtn.setAttribute('aria-hidden', 'false');
+                        } else {
+                            clearBtn.style.display = 'none';
+                            clearBtn.setAttribute('aria-hidden', 'true');
+                        }
+                    }
+                }
+                
+                // Function to show/hide loading state
+                function showLoadingState(show) {
+                    if (loadingIndicator) {
+                        if (show && !isSearching) {
+                            loadingIndicator.style.display = 'block';
+                            isSearching = true;
+                        } else if (!show && isSearching) {
+                            loadingIndicator.style.display = 'none';
+                            isSearching = false;
+                        }
+                    }
+                }
+                
+                // Enhanced search function
+                function performSearch(query) {
+                    try {
+                        const faqItems = safeQuerySelectorAll('.faq-item');
+                        const faqGroups = safeQuerySelectorAll('.faq-group');
+                        let visibleCount = 0;
+                        
+                        // Create array to store items with their match scores
+                        const itemsWithScores = [];
+                        
+                        // Track which groups have visible results
+                        const groupsWithResults = new Set();
+                        
+                        // Add visual feedback for search state
+                        if (query.length > 0) {
+                            document.body.classList.add('searching');
+                        } else {
+                            document.body.classList.remove('searching');
+                        }
+                        
+                        faqItems.forEach(item => {
+                            try {
+                                const question = item.querySelector('.faq-question');
+                                const answer = item.querySelector('.faq-answer');
+                                
+                                if (!question || !answer) return;
+                                
+                                const questionText = question.textContent.toLowerCase();
+                                const answerText = answer.textContent.toLowerCase();
+                                
+                                if (query === '') {
+                                    item.style.display = '';
+                                    visibleCount++;
+                                    removeHighlighting(question);
+                                    removeHighlighting(answer);
+                                    item.classList.remove('search-result');
+                                    return;
+                                }
+                                
+                                // Calculate match score
+                                const score = calculateMatchScore(query, questionText, answerText, synonyms);
+                                
+                                if (score > 0) {
+                                    itemsWithScores.push({
+                                        item: item,
+                                        score: score,
+                                        question: question,
+                                        answer: answer
+                                    });
+                                    
+                                    // Track which group this item belongs to
+                                    const parentGroup = item.closest('.faq-group');
+                                    if (parentGroup) {
+                                        groupsWithResults.add(parentGroup);
+                                    }
+                                } else {
+                                    item.style.display = 'none';
+                                    removeHighlighting(question);
+                                    removeHighlighting(answer);
+                                    item.classList.remove('search-result');
+                                }
+                            } catch (error) {
+                                console.error('Error processing FAQ item:', error);
+                            }
+                        });
+                        
+                        // Sort items by score (highest first)
+                        itemsWithScores.sort((a, b) => b.score - a.score);
+                        
+                        // Show items and apply highlighting with animation
+                        itemsWithScores.forEach(({item, question, answer, score}, index) => {
+                            item.style.display = '';
+                            visibleCount++;
+                            item.classList.add('search-result');
+                            
+                            // Stagger animation for search results
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            }, index * 50); // 50ms delay between each result
+                            
+                            // Apply highlighting with smart matching
+                            highlightSmartText(question, query, synonyms);
+                            highlightSmartText(answer, query, synonyms);
+                        });
+                        
+                        // Manage FAQ group expansion/collapse based on search results
+                        manageGroupExpansion(query, groupsWithResults, faqGroups);
+                        
+                        // Update results counter with enhanced feedback
+                        updateResultsCounter(resultsCounter, visibleCount, totalItems, query);
+                        
+                        // Show/hide "no results" message
+                        showNoResultsMessage(!visibleCount && query !== '');
+                        
+                    } catch (error) {
+                        console.error('Error performing search:', error);
+                        showLoadingState(false);
+                    }
+                }
+                
+                // Function to manage FAQ group expansion/collapse
+                function manageGroupExpansion(query, groupsWithResults, allGroups) {
+                    try {
+                        if (query === '') {
+                            // When search is cleared, collapse all groups
+                            allGroups.forEach(group => {
+                                collapseGroup(group);
+                            });
+                        } else if (groupsWithResults.size > 0) {
+                            // When there are search results, expand groups with results and collapse others
+                            allGroups.forEach(group => {
+                                if (groupsWithResults.has(group)) {
+                                    expandGroup(group);
+                                } else {
+                                    collapseGroup(group);
+                                }
+                            });
+                        } else {
+                            // When no results found, collapse all groups
+                            allGroups.forEach(group => {
+                                collapseGroup(group);
+                            });
+                        }
+                    } catch (error) {
+                        console.error('Error managing group expansion:', error);
+                    }
+                }
+                
+                // Function to expand a FAQ group
+                function expandGroup(group) {
+                    try {
+                        const accordion = group.querySelector('.faq-accordion');
+                        const toggle = group.querySelector('.faq-group-toggle');
+                        
+                        if (accordion && toggle && !group.classList.contains('open')) {
+                            group.classList.add('open');
+                            accordion.style.maxHeight = accordion.scrollHeight + 'px';
+                            
+                            // Add visual feedback for expanded search results
+                            group.classList.add('search-expanded');
+                        }
+                    } catch (error) {
+                        console.error('Error expanding group:', error);
+                    }
+                }
+                
+                // Function to collapse a FAQ group
+                function collapseGroup(group) {
+                    try {
+                        const accordion = group.querySelector('.faq-accordion');
+                        const toggle = group.querySelector('.faq-group-toggle');
+                        
+                        if (accordion && toggle && group.classList.contains('open')) {
+                            group.classList.remove('open');
+                            accordion.style.maxHeight = '0px';
+                            
+                            // Remove search expansion styling
+                            group.classList.remove('search-expanded');
+                        }
+                    } catch (error) {
+                        console.error('Error collapsing group:', error);
+                    }
+                }
+            } catch (error) {
+                console.error('Error initializing FAQ search:', error);
+            }
+        }
+        
+        // Calculate match score with fuzzy matching and synonyms
+        function calculateMatchScore(query, questionText, answerText, synonyms) {
+            try {
+                let maxScore = 0;
+                
+                // Check exact matches first (highest priority)
+                if (questionText.includes(query) || answerText.includes(query)) {
+                    maxScore = Math.max(maxScore, 100);
+                }
+                
+                // Check synonyms
+                const querySynonyms = getSynonyms(query, synonyms);
+                for (const synonym of querySynonyms) {
+                    if (questionText.includes(synonym) || answerText.includes(synonym)) {
+                        maxScore = Math.max(maxScore, 80);
+                    }
+                }
+                
+                // Check partial matches
+                const queryWords = query.split(' ').filter(word => word.length > 2);
+                for (const word of queryWords) {
+                    if (questionText.includes(word) || answerText.includes(word)) {
+                        maxScore = Math.max(maxScore, 60);
+                    }
+                    
+                    // Check synonyms for each word
+                    const wordSynonyms = getSynonyms(word, synonyms);
+                    for (const synonym of wordSynonyms) {
+                        if (questionText.includes(synonym) || answerText.includes(synonym)) {
+                            maxScore = Math.max(maxScore, 50);
+                        }
+                    }
+                }
+                
+                // Fuzzy matching for typos (lower priority)
+                if (maxScore === 0) {
+                    const fuzzyScore = calculateFuzzyScore(query, questionText, answerText);
+                    if (fuzzyScore > 0.7) { // 70% similarity threshold
+                        maxScore = Math.max(maxScore, 30);
+                    }
+                }
+                
+                return maxScore;
+            } catch (error) {
+                console.error('Error calculating match score:', error);
+                return 0;
+            }
+        }
+        
+        // Get synonyms for a word
+        function getSynonyms(word, synonyms) {
+            try {
+                return synonyms[word] || [];
+            } catch (error) {
+                console.error('Error getting synonyms:', error);
+                return [];
+            }
+        }
+        
+        // Calculate fuzzy matching score using Levenshtein distance
+        function calculateFuzzyScore(query, questionText, answerText) {
+            try {
+                const questionWords = questionText.split(' ');
+                const answerWords = answerText.split(' ');
+                let maxSimilarity = 0;
+                
+                // Check similarity with question words
+                for (const word of questionWords) {
+                    if (word.length > 3) { // Only check words longer than 3 characters
+                        const similarity = calculateSimilarity(query, word);
+                        maxSimilarity = Math.max(maxSimilarity, similarity);
+                    }
+                }
+                
+                // Check similarity with answer words
+                for (const word of answerWords) {
+                    if (word.length > 3) {
+                        const similarity = calculateSimilarity(query, word);
+                        maxSimilarity = Math.max(maxSimilarity, similarity);
+                    }
+                }
+                
+                return maxSimilarity;
+            } catch (error) {
+                console.error('Error calculating fuzzy score:', error);
+                return 0;
+            }
+        }
+        
+        // Calculate similarity between two strings using Levenshtein distance
+        function calculateSimilarity(str1, str2) {
+            try {
+                const distance = levenshteinDistance(str1, str2);
+                const maxLength = Math.max(str1.length, str2.length);
+                return maxLength === 0 ? 1 : (maxLength - distance) / maxLength;
+            } catch (error) {
+                console.error('Error calculating similarity:', error);
+                return 0;
+            }
+        }
+        
+        // Levenshtein distance algorithm
+        function levenshteinDistance(str1, str2) {
+            try {
+                const matrix = [];
+                
+                for (let i = 0; i <= str2.length; i++) {
+                    matrix[i] = [i];
+                }
+                
+                for (let j = 0; j <= str1.length; j++) {
+                    matrix[0][j] = j;
+                }
+                
+                for (let i = 1; i <= str2.length; i++) {
+                    for (let j = 1; j <= str1.length; j++) {
+                        if (str2.charAt(i - 1) === str1.charAt(j - 1)) {
+                            matrix[i][j] = matrix[i - 1][j - 1];
+                        } else {
+                            matrix[i][j] = Math.min(
+                                matrix[i - 1][j - 1] + 1,
+                                matrix[i][j - 1] + 1,
+                                matrix[i - 1][j] + 1
+                            );
+                        }
+                    }
+                }
+                
+                return matrix[str2.length][str1.length];
+            } catch (error) {
+                console.error('Error calculating Levenshtein distance:', error);
+                return 0;
+            }
+        }
+        
+        // Smart text highlighting with synonyms support
+        function highlightSmartText(element, query, synonyms) {
+            try {
+                if (!element || !query) return;
+                
+                const text = element.textContent;
+                let highlightedText = text;
+                
+                // Highlight exact matches
+                const exactRegex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
+                highlightedText = highlightedText.replace(exactRegex, '<mark style="background-color: #fef3c7; color: #92400e; padding: 0.1rem 0.2rem; border-radius: 0.2rem; font-weight: 600;">$1</mark>');
+                
+                // Highlight synonyms
+                const querySynonyms = getSynonyms(query, synonyms);
+                for (const synonym of querySynonyms) {
+                    if (synonym.length > 2) {
+                        const synonymRegex = new RegExp(`(${escapeRegExp(synonym)})`, 'gi');
+                        highlightedText = highlightedText.replace(synonymRegex, '<mark style="background-color: #dbeafe; color: #1e40af; padding: 0.1rem 0.2rem; border-radius: 0.2rem; font-weight: 600;">$1</mark>');
+                    }
+                }
+                
+                // Highlight partial matches
+                const queryWords = query.split(' ').filter(word => word.length > 2);
+                for (const word of queryWords) {
+                    const wordRegex = new RegExp(`(${escapeRegExp(word)})`, 'gi');
+                    highlightedText = highlightedText.replace(wordRegex, '<mark style="background-color: #f0fdf4; color: #166534; padding: 0.1rem 0.2rem; border-radius: 0.2rem; font-weight: 600;">$1</mark>');
+                }
+                
+                if (highlightedText !== text) {
+                    element.innerHTML = highlightedText;
+                }
+            } catch (error) {
+                console.error('Error highlighting smart text:', error);
+            }
+        }
+        
+        // Function to remove highlighting
+        function removeHighlighting(element) {
+            try {
+                if (!element) return;
+                
+                // Remove all <mark> tags and restore original text
+                const marks = element.querySelectorAll('mark');
+                marks.forEach(mark => {
+                    mark.replaceWith(mark.textContent);
+                });
+            } catch (error) {
+                console.error('Error removing highlighting:', error);
+            }
+        }
+        
+        // Function to escape special regex characters
+        function escapeRegExp(string) {
+            try {
+                return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            } catch (error) {
+                console.error('Error escaping regex:', error);
+                return string;
+            }
+        }
+        
+        // Function to update results counter
+        function updateResultsCounter(counterElement, visibleCount, totalCount, query) {
+            try {
+                if (!counterElement) return;
+                
+                if (query === '') {
+                    counterElement.textContent = '';
+                    counterElement.style.display = 'none';
+                } else if (visibleCount === 0) {
+                    counterElement.textContent = 'No results found';
+                    counterElement.style.color = '#dc2626';
+                    counterElement.style.display = 'block';
+                } else if (visibleCount === totalCount) {
+                    counterElement.textContent = `Showing all ${totalCount} results`;
+                    counterElement.style.color = '#059669';
+                    counterElement.style.display = 'block';
             } else {
-                answer.style.maxHeight = answer.scrollHeight + 'px';
+                    counterElement.textContent = `Showing ${visibleCount} of ${totalCount} results`;
+                    counterElement.style.color = '#2563eb';
+                    counterElement.style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Error updating results counter:', error);
             }
-        });
-    });
+        }
+        
+        // Global keyboard shortcuts
+        function initGlobalShortcuts() {
+            try {
+                document.addEventListener('keydown', function(e) {
+                    // Ctrl+F to focus search (prevent default browser find)
+                    if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+                        const searchInput = safeQuerySelector('#faq-search-input');
+                        if (searchInput && document.activeElement !== searchInput) {
+                            e.preventDefault();
+                            searchInput.focus();
+                            searchInput.select();
+                        }
+                    }
+                    
+                    // Ctrl+L to focus first FAQ group
+                    if ((e.ctrlKey || e.metaKey) && e.key === 'l') {
+                        e.preventDefault();
+                        const firstGroup = safeQuerySelector('.faq-group-toggle');
+                        if (firstGroup) firstGroup.focus();
+                    }
+                });
+            } catch (error) {
+                console.error('Error initializing global shortcuts:', error);
+            }
+        }
+        
+        // Skip link functionality
+        function initSkipLinks() {
+            try {
+                const skipLink = safeQuerySelector('#skip-to-faq');
+                if (skipLink) {
+                    skipLink.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const target = safeQuerySelector('#faq-navigation');
+                        if (target) {
+                            target.focus();
+                            target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    });
+                }
+            } catch (error) {
+                console.error('Error initializing skip links:', error);
+            }
+        }
+        
+        function showNoResultsMessage(show) {
+            try {
+                let noResultsMsg = safeQuerySelector('#faq-no-results');
+                
+                if (show && !noResultsMsg) {
+                    noResultsMsg = document.createElement('div');
+                    noResultsMsg.id = 'faq-no-results';
+                    noResultsMsg.style.cssText = 'text-align:center;padding:2rem;color:#6b7280;font-style:italic;';
+                    noResultsMsg.textContent = 'No FAQ items found matching your search.';
+                    
+                    const faqSection = safeQuerySelector('.faq-section');
+                    if (faqSection) {
+                        faqSection.appendChild(noResultsMsg);
+                    }
+                } else if (!show && noResultsMsg) {
+                    noResultsMsg.remove();
+                }
+            } catch (error) {
+                console.error('Error showing no results message:', error);
+            }
+        }
+        
+        // Enhanced Back to Top Button Functionality
+        function initBackToTop() {
+            try {
+                const btn = safeQuerySelector('#back-to-top');
+                if (!btn) return;
+                
+                let scrollTimeout;
+                
+                window.addEventListener('scroll', function() {
+                    clearTimeout(scrollTimeout);
+                    
+                    scrollTimeout = setTimeout(() => {
+                        try {
+                            if (window.scrollY > 300) {
+                                btn.style.display = 'block';
+                                btn.setAttribute('aria-hidden', 'false');
+                            } else {
+                                btn.style.display = 'none';
+                                btn.setAttribute('aria-hidden', 'true');
+                            }
+                        } catch (error) {
+                            console.error('Error handling scroll:', error);
+                        }
+                    }, 10);
+                });
+                
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    try {
+                        window.scrollTo({ 
+                            top: 0, 
+                            behavior: 'smooth' 
+                        });
+                        
+                        setTimeout(() => {
+                            const mainHeading = safeQuerySelector('.faq-hero h1');
+                            if (mainHeading) {
+                                mainHeading.focus();
+                            }
+                        }, 500);
+                    } catch (error) {
+                        console.error('Error scrolling to top:', error);
+                        window.scrollTo(0, 0);
+                    }
+                });
+                
+                btn.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            } catch (error) {
+                console.error('Error initializing back to top button:', error);
+            }
+        }
+        
+        // Initialize all functionality
+        function init() {
+            try {
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', initAll);
+                } else {
+                    initAll();
+                }
+            } catch (error) {
+                console.error('Error in initialization:', error);
+            }
+        }
+        
+        function initAll() {
+            try {
+                initFAQGroups();
+                initFAQSearch();
+                initBackToTop();
+                initGlobalShortcuts();
+                initSkipLinks();
+                
+                console.log('FAQ functionality initialized successfully (groups only)');
+            } catch (error) {
+                console.error('Error initializing FAQ functionality:', error);
+            }
+        }
+        
+        init();
+        
+    })();
     </script>
 </body>
 </html> 

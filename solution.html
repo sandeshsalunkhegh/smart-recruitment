@@ -38,22 +38,22 @@
             <div class="container">
                 <h2 class="section-title">Our Solution: How We Transform Recruitment</h2>
                 <div class="solution-feature-grid">
-                    <div class="solution-feature-card">
+                    <div class="solution-feature-card slide-in-up-solution">
                         <i class="fas fa-user-check feature-icon"></i>
                         <h3>No-Resume, Skill-First Hiring</h3>
                         <p>Highlight genuine ability over job titles. Candidates engage with a dynamic system that illuminates their true potential—no generic resumes required.</p>
                     </div>
-                    <div class="solution-feature-card">
+                    <div class="solution-feature-card slide-in-up-solution">
                         <i class="fas fa-brain feature-icon"></i>
                         <h3>SkillGraph+™ Guided Learning</h3>
                         <p>Personalized, role-based learning tracks and micro-certified modules ensure every candidate is job-ready and confident.</p>
                     </div>
-                    <div class="solution-feature-card">
+                    <div class="solution-feature-card slide-in-up-solution">
                         <i class="fas fa-shield-alt feature-icon"></i>
                         <h3>Anti-Cheating & Dual-Score System</h3>
                         <p>Advanced fraud mapping, behavioral analytics, and a dual-score system ensure assessment integrity and fairness for all.</p>
                     </div>
-                    <div class="solution-feature-card">
+                    <div class="solution-feature-card slide-in-up-solution">
                         <i class="fas fa-users feature-icon"></i>
                         <h3>Culture Fit & Add Simulator</h3>
                         <p>Gamified simulations and customizable scenarios test real workplace alignment and values, not just skills.</p>
@@ -80,8 +80,8 @@
                         <h4>✅ Smart Role Profiler</h4>
                         <p>
                             <ul>
-                                <li>• Candidates complete an interactive questionnaire about their interests, strengths, preferred work type, and culture.</li>
-                                <li>• Our AI maps this data to <span class="highlight-feature">best-fit roles</span> they might not have considered, helping them discover their true career direction.</li>
+                                <li>Candidates complete an interactive questionnaire about their interests, strengths, preferred work type, and culture.</li>
+                                <li>Our AI maps this data to <span class="highlight-feature">best-fit roles</span> they might not have considered, helping them discover their true career direction.</li>
                             </ul>
                         </p>
                     </div>
@@ -89,8 +89,8 @@
                         <h4>✅ Dynamic Learning Tracks</h4>
                         <p>
                             <ul>
-                                <li>• Learning isn't static.</li>
-                                <li>• If a candidate struggles with an assessment, our system suggests a <span class="highlight-feature">micro-course</span> to bridge that specific skill gap, along with <span class="highlight-feature">learning analytics</span> to indicate when they're ready to re-attempt.</li>
+                                <li>Learning isn't static.</li>
+                                <li>If a candidate struggles with an assessment, our system suggests a <span class="highlight-feature">micro-course</span> to bridge that specific skill gap, along with <span class="highlight-feature">learning analytics</span> to indicate when they're ready to re-attempt.</li>
                             </ul>
                         </p>
                     </div>
@@ -98,8 +98,8 @@
                         <h4>✅ Live Skill Demos</h4>
                         <p>
                             <ul>
-                                <li>• Candidates can upload project work, recorded screen sessions (for coding, design, etc.), or behavioral video pitches for soft skills.</li>
-                                <li>• This <span class="highlight-quote">"Show, don't tell"</span> feature allows candidates to highlight their actual work and capabilities.</li>
+                                <li>Candidates can upload project work, recorded screen sessions (for coding, design, etc.), or behavioral video pitches for soft skills.</li>
+                                <li>This <span class="highlight-quote">Show, don't tell</span> feature allows candidates to highlight their actual work and capabilities.</li>
                             </ul>
                         </p>
                     </div>
@@ -107,8 +107,8 @@
                         <h4>✅ Holistic Scoring Engine</h4>
                         <p>
                             <ul>
-                                <li>• Our final candidate score is comprehensive: combining <span class="highlight-percentage">Technical (50%)</span> + <span class="highlight-percentage">Behavioral (25%)</span> + <span class="highlight-percentage">Culture Fit (15%)</span> + <span class="highlight-percentage">Work Ethic (10%)</span>.</li>
-                                <li>• Recruiters can customize these percentages for each job post.</li>
+                                <li>Our final candidate score is comprehensive: combining <span class="highlight-percentage">Technical (50%)</span> + <span class="highlight-percentage">Behavioral (25%)</span> + <span class="highlight-percentage">Culture Fit (15%)</span> + <span class="highlight-percentage">Work Ethics (10%)</span>.</li>
+                                <li>Recruiters can customize these percentages for each job post.</li>
                             </ul>
                         </p>
                     </div>
@@ -116,8 +116,8 @@
                         <h4>✅ Culture Fit Simulator</h4>
                         <p>
                             <ul>
-                                <li>• Beyond basic multiple-choice, we offer <span class="highlight-feature">gamified simulations</span> with real workplace scenarios to test alignment with company values.</li>
-                                <li>• Each company can use default tests or create their own customized scenarios.</li>
+                                <li>Beyond basic multiple-choice, we offer <span class="highlight-feature">gamified simulations</span> with real workplace scenarios to test alignment with company values.</li>
+                                <li>Each company can use default tests or create their own customized scenarios.</li>
                             </ul>
                         </p>
                     </div>
@@ -281,9 +281,9 @@
                 <h4>Solutions to Detect & Prevent Cheating:</h4>
                 <div class="solution-feature-block">
                   <ul class="solution-list">
-                    <li>• AI-based proctoring, browser lockdown, and real-time monitoring.</li>
-                    <li>• Typing biometrics, face ID, and device fingerprinting.</li>
-                    <li>• Adaptive test engines and NLP anomaly detection.</li>
+                    <li>AI-based proctoring, browser lockdown, and real-time monitoring.</li>
+                    <li>Typing biometrics, face ID, and device fingerprinting.</li>
+                    <li>Adaptive test engines and NLP anomaly detection.</li>
                   </ul>
                 </div>
 
@@ -312,5 +312,21 @@
             <p>&copy; 2025 Smart Recruitment. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+    // Animation for .slide-in-up-solution elements
+    (function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.slide-in-up-solution').forEach(function(el) {
+        observer.observe(el);
+      });
+    })();
+    </script>
 </body>
 </html>

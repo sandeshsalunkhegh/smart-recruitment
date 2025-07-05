@@ -30,6 +30,22 @@
       .section-description { background: #f1f5f9; border-left: 4px solid #6366f1; padding: 1rem 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem; color: #222; font-size: 1.05rem; }
       .section-divider { border: none; border-top: 1.5px solid #e0e7ef; margin: 2.2rem 0 1.7rem 0; }
       @media (max-width: 600px) { .problem-hero { padding: 1.5rem 0 0.7rem 0; } }
+      #problem-bullets {
+        list-style: none;
+        padding-left: 0;
+      }
+      #problem-bullets li {
+        position: relative;
+        padding-left: 1.2em;
+      }
+      #problem-bullets li::before {
+        content: '\2022';
+        color: #6366f1;
+        font-size: 1.1em;
+        position: absolute;
+        left: 0;
+        top: 0.1em;
+      }
     </style>
 </head>
 <body>
@@ -61,7 +77,7 @@
 
                 <h3>The Core of the Problem</h3>
                 <p>Several factors contribute to protracted hiring cycles:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li><strong>Manual Scheduling & Coordination:</strong> The back-and-forth of finding suitable interview times for multiple candidates and interviewers.</li>
                     <li><strong>Slow Feedback Loops:</strong> Delays in hiring managers providing feedback on candidates, holding up the next steps.</li>
                     <li><strong>Too Many Interview Stages:</strong> An excessive number of interviews or assessments that don't add proportional value.</li>
@@ -72,7 +88,7 @@
 
                 <h3>Impact on Your Organization</h3>
                 <p>The consequences of slow hiring are significant and costly:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li><strong>Loss of Top Talent:</strong> The most sought-after candidates are quickly snapped up by faster-moving competitors.</li>
                     <li><strong>Reduced Productivity:</strong> Critical roles remain vacant, placing strain on existing teams and delaying projects.</li>
                     <li><strong>Increased Costs:</strong> Higher recruitment agency fees (if applicable), extended advertising costs, and the hidden cost of lost productivity.</li>
@@ -82,7 +98,7 @@
 
                 <h3>Traditional (Often Ineffective) Solutions</h3>
                 <p>Companies sometimes attempt to speed things up by:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li>Pressuring recruiters to "hire faster" without providing the right tools.</li>
                     <li>Reducing the number of interviews, potentially compromising quality.</li>
                     <li>Offering higher salaries out of desperation to close roles quickly.</li>
@@ -91,7 +107,7 @@
 
                 <h3 style="text-align: center;">How Our Software Transforms This Challenge</h3>
                 <p class="section-description">Our recruitment software is engineered for speed and efficiency, dramatically reducing your time-to-hire without compromising on quality. We achieve this through:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li><strong>Automation for Scheduling & Communication:</strong> Automated interview scheduling, reminder emails, and communication templates eliminate manual back-and-forth.</li>
                     <li><strong>Streamlined 3-Step Process:</strong> Implement a clear, efficient hiring funnel (e.g., Initial Screen → Skills Assessment → Final Interview) with automated progression.</li>
                     <li><strong>Advanced Applicant Tracking System (ATS):</strong> Fast-track candidate evaluation with centralized profiles, collaborative feedback, and rapid progression through stages.</li>
@@ -137,7 +153,7 @@
 
                     <div style="background: rgba(99, 102, 241, 0.1); padding: 1.5rem; border-radius: 0.5rem; margin-top: 1.5rem;">
                         <h4 style="color: var(--primary-color); margin-bottom: 1rem;">🚀 Key Benefits:</h4>
-                        <ul>
+                        <ul id="problem-bullets">
                             <li><strong>Reduces Time-to-Hire by 60%:</strong> Automated workflows eliminate bottlenecks</li>
                             <li><strong>Eliminates Scheduling Conflicts:</strong> Smart calendar integration prevents delays</li>
                             <li><strong>Accelerates Decision Making:</strong> Comprehensive candidate profiles enable quick evaluation</li>

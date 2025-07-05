@@ -30,6 +30,22 @@
       .section-description { background: #f1f5f9; border-left: 4px solid #6366f1; padding: 1rem 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem; color: #222; font-size: 1.05rem; }
       .section-divider { border: none; border-top: 1.5px solid #e0e7ef; margin: 2.2rem 0 1.7rem 0; }
       @media (max-width: 600px) { .problem-hero { padding: 1.5rem 0 0.7rem 0; } }
+      #problem-bullets {
+        list-style: none;
+        padding-left: 0;
+      }
+      #problem-bullets li {
+        position: relative;
+        padding-left: 1.2em;
+      }
+      #problem-bullets li::before {
+        content: '\2022';
+        color: #6366f1;
+        font-size: 1.1em;
+        position: absolute;
+        left: 0;
+        top: 0.1em;
+      }
     </style>
 </head>
 <body>
@@ -61,7 +77,7 @@
 
                 <h3>The Core of the Problem</h3>
                 <p>The confusion around "culture fit" manifests in several ways:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li><strong>Subjective Interpretation:</strong> "Fit" often becomes a euphemism for hiring people who are similar to existing employees in background, personality, or even demographics.</li>
                     <li><strong>Bias Reinforcement:</strong> Interviewers might unconsciously favor candidates who share their hobbies, education, or communication style, rather than objective job-related traits.</li>
                     <li><strong>Stifled Innovation:</strong> When everyone thinks alike, there's less challenge to the status quo and fewer novel solutions to problems.</li>
@@ -71,7 +87,7 @@
 
                 <h3>Impact on Your Organization</h3>
                 <p>The consequences of prioritizing "culture fit" over "culture add" are profound:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li><strong>Reduced Diversity & Inclusion:</strong> Leads to homogenous teams, impacting your ability to serve diverse customer bases and adapt to changing markets.</li>
                     <li><strong>Stagnation:</strong> Less diversity in thought can lead to groupthink and a lack of creative problem-solving.</li>
                     <li><strong>Missed Opportunities:</strong> Your company might miss out on innovative ideas and perspectives that a more diverse workforce would bring.</li>
@@ -81,7 +97,7 @@
 
                 <h3>Traditional (Often Ineffective) Solutions</h3>
                 <p>Companies sometimes attempt to address this by:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li>Simply telling hiring managers to "hire for diversity" without changing the assessment criteria.</li>
                     <li>Conducting superficial "culture interviews" that rely on subjective impressions.</li>
                     <li>Creating general lists of company values without defining what those values look like in specific behaviors.</li>
@@ -90,8 +106,8 @@
 
                 <h3 style="text-align: center;">How Our Software Transforms This Challenge</h3>
                 <p class="section-description">Our recruitment software redefines how you assess cultural alignment, shifting the focus from simply "fitting in" to actively contributing to and enriching your culture. We help you build truly dynamic and innovative teams by:</p>
-                <ul>
-                                            <li><strong>Redefining Cultural Assessment:</strong> Provide tools to help you identify and assess for <strong>values alignment</strong> and the ability to bring <strong>diverse perspectives</strong>, rather than just personality similarities.</li>
+                <ul id="problem-bullets">
+                    <li><strong>Redefining Cultural Assessment:</strong> Provide tools to help you identify and assess for <strong>values alignment</strong> and the ability to bring <strong>diverse perspectives</strong>, rather than just personality similarities.</li>
                     <li><strong>Situational Judgment Tests:</strong> Implement scenario-based assessments that reflect real company situations, evaluating how candidates would respond to challenges and collaborate with others, focusing on behaviors aligned with your core values.</li>
                     <li><strong>Structured Behavioral Interviews:</strong> Offer templates and frameworks for interviews designed to uncover how a candidate's experiences and approaches would add to your team's dynamics.</li>
                     <li><strong>Objective Scoring & Analytics:</strong> Provide tools for consistent, unbiased scoring of cultural assessments, reducing subjective interpretation.</li>
@@ -135,7 +151,7 @@
 
                     <div style="background: rgba(99, 102, 241, 0.1); padding: 1.5rem; border-radius: 0.5rem; margin-top: 1.5rem;">
                         <h4 style="color: var(--primary-color); margin-bottom: 1rem;">🚀 Key Benefits:</h4>
-                        <ul>
+                        <ul id="problem-bullets">
                             <li><strong>Eliminates Subjective Bias:</strong> Objective assessment replaces "gut feeling" decisions</li>
                             <li><strong>Clarifies Culture Definition:</strong> Clear company pages define what culture fit means</li>
                             <li><strong>Improves Diversity:</strong> Objective evaluation reduces unconscious bias</li>

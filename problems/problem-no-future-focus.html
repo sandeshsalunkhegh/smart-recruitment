@@ -30,6 +30,22 @@
       .section-description { background: #f1f5f9; border-left: 4px solid #6366f1; padding: 1rem 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem; color: #222; font-size: 1.05rem; }
       .section-divider { border: none; border-top: 1.5px solid #e0e7ef; margin: 2.2rem 0 1.7rem 0; }
       @media (max-width: 600px) { .problem-hero { padding: 1.5rem 0 0.7rem 0; } }
+      #problem-bullets {
+        list-style: none;
+        padding-left: 0;
+      }
+      #problem-bullets li {
+        position: relative;
+        padding-left: 1.2em;
+      }
+      #problem-bullets li::before {
+        content: '\2022';
+        color: #6366f1;
+        font-size: 1.1em;
+        position: absolute;
+        left: 0;
+        top: 0.1em;
+      }
     </style>
 </head>
 <body>
@@ -61,7 +77,7 @@
 
                 <h3>The Core of the Problem</h3>
                 <p>A lack of focus on future growth potential stems from:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li><strong>Short-Term Thinking:</strong> Pressure to fill immediate vacancies without considering long-term strategic needs.</li>
                     <li><strong>Traditional Interview Questions:</strong> Focusing heavily on past achievements rather than future capabilities or learning ability.</li>
                     <li><strong>Absence of Predictive Assessments:</strong> Not utilizing tools that can assess a candidate's aptitude for learning, adaptability, and leadership potential.</li>
@@ -71,7 +87,7 @@
 
                 <h3>Impact on Your Organization</h3>
                 <p>Overlooking a candidate's growth potential can have significant drawbacks:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li><strong>Increased Future Hiring Needs:</strong> You'll constantly be backfilling roles as employees outgrow their positions or leave for better development opportunities elsewhere.</li>
                     <li><strong>Skill Gaps Emergence:</strong> The workforce may not evolve at the same pace as industry changes, leading to future skill shortages.</li>
                     <li><strong>Stagnant Innovation:</strong> A lack of fresh perspectives and new ideas from growth-oriented individuals can hinder innovation.</li>
@@ -81,7 +97,7 @@
 
                 <h3>Traditional (Often Ineffective) Solutions</h3>
                 <p>Companies sometimes try to address this by:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li>Adding "must be a team player" to job descriptions without specific assessment criteria.</li>
                     <li>Asking generic "where do you see yourself in 5 years?" questions without a structured way to evaluate the answer.</li>
                     <li>Hoping that good performance in one role automatically translates to readiness for another.</li>
@@ -90,7 +106,7 @@
 
                 <h3 style="text-align: center;">How Our Software Transforms This Challenge</h3>
                 <p class="section-description">Our recruitment software empowers you to look beyond immediate qualifications and identify candidates with the innate curiosity, adaptability, and ambition to grow with your organization. We help you build a future-ready workforce by:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li><strong>Psychometric Assessments:</strong> Integrate tools that evaluate a candidate's cognitive abilities, personality traits, and inherent motivators, indicating potential for growth.</li>
                     <li><strong>Learning Agility Tests:</strong> Implement assessments specifically designed to measure a candidate's capacity to learn, adapt to new information, and thrive in ambiguous environments.</li>
                     <li><strong>Scenario-Based Interviews:</strong> Guide interviewers to ask questions that explore a candidate's approach to learning from failures, seeking new challenges, and adapting to change.</li>
@@ -135,7 +151,7 @@
 
                     <div style="background: rgba(99, 102, 241, 0.1); padding: 1.5rem; border-radius: 0.5rem; margin-top: 1.5rem;">
                         <h4 style="color: var(--primary-color); margin-bottom: 1rem;">🚀 Key Benefits:</h4>
-                        <ul>
+                        <ul id="problem-bullets">
                             <li><strong>Creates Long-Term Vision:</strong> Clear career roadmaps guide future planning</li>
                             <li><strong>Develops Future-Ready Skills:</strong> Focus on emerging technologies and trends</li>
                             <li><strong>Supports Career Evolution:</strong> Adaptive learning tracks accommodate changing goals</li>

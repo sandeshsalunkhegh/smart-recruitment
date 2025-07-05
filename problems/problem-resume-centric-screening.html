@@ -111,6 +111,22 @@
           padding: 1.5rem 0 0.7rem 0;
         }
       }
+      #problem-bullets {
+        list-style: none;
+        padding-left: 0;
+      }
+      #problem-bullets li {
+        position: relative;
+        padding-left: 1.2em;
+      }
+      #problem-bullets li::before {
+        content: '\2022';
+        color: #6366f1;
+        font-size: 1.1em;
+        position: absolute;
+        left: 0;
+        top: 0.1em;
+      }
     </style>
 </head>
 <body>
@@ -142,7 +158,7 @@
 
                 <h3>The Core of the Problem</h3>
                 <p>Resume-centric screening has several inherent flaws:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li><strong>Lack of Real-World Insight:</strong> Resumes describe past experiences, but rarely demonstrate how a candidate applies skills in real-time or solves problems.</li>
                     <li><strong>Bias Towards "Perfect" Resumes:</strong> Candidates from privileged backgrounds, or those with professional resume writers, may appear more qualified on paper.</li>
                     <li><strong>Keyword Matching Limitations:</strong> Automated systems often rely on keyword matching, missing candidates with equivalent skills described differently or those from non-traditional paths.</li>
@@ -154,7 +170,7 @@
 
                 <h3>Impact on Your Organization</h3>
                 <p>The reliance on resumes can have detrimental effects:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li><strong>Missed Talent:</strong> Overlooking high-potential candidates who possess the right aptitude but lack traditional resume "signals."</li>
                     <li><strong>Reduced Diversity:</strong> Perpetuating existing biases if resumes favor specific schools, companies, or career trajectories.</li>
                     <li><strong>Increased Time and Cost:</strong> Manual resume screening is labor-intensive, and hiring managers waste time interviewing unqualified candidates identified solely by resumes.</li>
@@ -165,7 +181,7 @@
 
                 <h3>Traditional (Often Ineffective) Solutions</h3>
                 <p>Companies often try to manage this by:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li>Hiring more recruiters to manually review more resumes.</li>
                     <li>Adding more "required" keywords to job descriptions, leading to an even narrower search.</li>
                     <li>Spending more time in initial phone screens trying to uncover what the resume missed.</li>
@@ -176,7 +192,7 @@
 
                 <h3 style="text-align: center;">How Our Software Transforms This Challenge</h3>
                 <p class="section-description">Our recruitment software moves beyond the limitations of traditional resumes, providing a holistic and objective approach to candidate screening. We focus on true capability and potential by:</p>
-                <ul>
+                <ul id="problem-bullets">
                     <li><strong>Implementing Skill-Based Assessments & Project Tasks:</strong> Introduce early-stage assessments that evaluate actual abilities relevant to the role, rather than just claimed skills.</li>
                     <li><strong>Using AI for Potential & Capability Matching:</strong> Our AI goes beyond keyword matching to analyze a candidate's underlying potential, learning agility, and aptitude for various roles.</li>
                     <li><strong>Standardized & Objective Evaluation:</strong> Provide tools for consistent and unbiased evaluation of assessment results.</li>
@@ -221,7 +237,7 @@
 
                     <div style="background: rgba(99, 102, 241, 0.1); padding: 1.5rem; border-radius: 0.5rem; margin-top: 1.5rem;">
                         <h4 style="color: var(--primary-color); margin-bottom: 1rem;">🚀 Key Benefits:</h4>
-                        <ul>
+                        <ul id="problem-bullets">
                             <li><strong>Eliminates Resume Bias:</strong> Focus on actual skills rather than presentation</li>
                             <li><strong>Discovers Hidden Talent:</strong> Uncovers candidates with potential but poor resume writing skills</li>
                             <li><strong>Improves Diversity:</strong> Reduces bias towards specific backgrounds or schools</li>
